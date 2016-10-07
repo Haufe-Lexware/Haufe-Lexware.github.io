@@ -17,8 +17,6 @@ Currently all of our Lexware “on-premise” products work, using the well-know
 
 I started to check and go through the information Microsoft provides for integrating “Passport” and “Hello” into applications.
 
-Due to the short timeframe, our team had to make use of one technology that was known by the whole team, and so we also decided at very the beginning to develop in C#.
-
 I also started recoding the sample from the pages, creating a simple Universal Windows Platform (UWP) app that performed indentification by Face recognition - [See Sample on MSDN](https://msdn.microsoft.com/en-us/windows/uwp/security/microsoft-passport-login-auth-service). The sample was short and pretty straightforward. It contains a simple xml serialization framework that would need to be replaced by a more secure data layer for productive usage. But to get started it was a really good resource.
 
 The next step I had planned was to transfer this sample from UWP into a normal desktop app. Here I was confronted with a show stopper: The Microsoft Passport and Windows Hello components were located in the WinRT Framework, but I planned to use the .Net Framework. I found a lot of information how to use WinRT Components in normal .Net applications - [e.g. on CodeProject](http://www.codeproject.com/Articles/457335/How-to-call-WinRT-APIs-from-NET-desktop-apps). There is also a [compatibility list](https://msdn.microsoft.com/en-us/library/windows/desktop/dn554295(v=vs.85).aspx), but Microsoft Passport and Windows Hello is not part of it, so there is no guarantee that it will work. After I finished the import I was faced with fact that it was impossible to initialize the Passport framework. 
