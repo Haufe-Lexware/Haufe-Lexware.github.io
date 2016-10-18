@@ -35,11 +35,11 @@ Nevertheless I copied the main characteristics:
 ![SCS parts]({{ site.url }}/images/scs-parts.png){:style="margin:auto"}
 
 {:.center}
-![SCS parts](https://github.com/Kodrafo/Kodrafo.github.io/images/scs-parts.png){:style="margin:auto"}
+![SCS parts](https://github.com/Kodrafo/Kodrafo.github.io/blob/master/images/scs-parts.png){:style="margin:auto"}
 
 ## Akademie and SCS
 
-The more I heard about Self contained Systems the more I was convinced that the pattern describes the way the Akademie Domain is reorganized.
+The more I heard about Self-contained Systems the more I was convinced that the pattern describes the way the Akademie Domain is reorganized.
 
 Quote from [Frequently Asked Questions page](http://scs-architecture.org/faq.html)  
 
@@ -51,16 +51,17 @@ This is the example of SCS systems from Eberhard Wolff.
 ![SCS modules example]({{ site.url }}/images/scs-modules.png){:style="margin:auto"}
 
 {:.center}
-![SCS modules example](https://github.com/Kodrafo/Kodrafo.github.io/images/scs-modules.png){:style="margin:auto"}
+![SCS modules example](https://github.com/Kodrafo/Kodrafo.github.io/blob/master/images/scs-modules.png){:style="margin:auto"}
 
-Looks a lot like the Akademie domain strategy. 
+Looks a lot like the Akademie domain strategy.   
 Isn't it cool to refactor a whole domain and finally find a named pattern for it?
 
 ## Start with a small amount of systems
 
 What attracts me most on SCS is the approach to divide an existing monolith in a small amount of separate web applications.
-You divide in e.g. 2-5 SCS. I'm sure that you learn a lot even while splitting a monolith in two pieces.
-I believe it's easier to define a clear boundary for a few systems than to divide in ten or even fifty microservices.
+You divide in e.g. 2-5 SCS. I'm sure that you learn a lot even while splitting a monolith in two parts.
+I believe it's easier to define a clear boundary for a few systems than to divide in ten or even fifty microservices.  
+After you learned your lessons I'm sure you can savely increase the number of microservices.
 
 ## Admin versus end user
 
