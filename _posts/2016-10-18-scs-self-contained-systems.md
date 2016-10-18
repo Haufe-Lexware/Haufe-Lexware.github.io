@@ -21,7 +21,7 @@ It's not possible to give a better introduction. Please read the website [scs-ar
 
 Nevertheless I copied the main characteristics:
 
-## SCS Characteristics
+### SCS Characteristics
 
 1. Each SCS is an autonomous web application
 2. Each SCS is owned by one team
@@ -37,11 +37,11 @@ Nevertheless I copied the main characteristics:
 {:.center}
 ![SCS parts](https://github.com/Kodrafo/Kodrafo.github.io/blob/master/images/scs-parts.png){:style="margin:auto"}
 
-## Akademie and SCS
+### Akademie and SCS
 
 The more I heard about Self-contained Systems the more I was convinced that the pattern describes the way the Akademie Domain is reorganized.
 
-Quote from [Frequently Asked Questions page](http://scs-architecture.org/faq.html)  
+Quote from [Frequently Asked Questions page](http://scs-architecture.org/faq.html)
 
 > Each SCS is responsible for a part of the domain. Dividing the domain into bounded contexts and understanding their relationships is what we refer to as domain architecture. Ideally, there is one SCS per bounded context.
 
@@ -56,14 +56,14 @@ This is the example of SCS systems from Eberhard Wolff.
 Looks a lot like the Akademie domain strategy.   
 Isn't it cool to refactor a whole domain and finally find a named pattern for it?
 
-## Start with a small amount of systems
+### Start with a small amount of systems
 
 What attracts me most on SCS is the approach to divide an existing monolith in a small amount of separate web applications.
 You divide in e.g. 2-5 SCS. I'm sure that you learn a lot even while splitting a monolith in two parts.
 I believe it's easier to define a clear boundary for a few systems than to divide in ten or even fifty microservices.  
 After you learned your lessons I'm sure you can savely increase the number of microservices.
 
-## Admin versus end user
+### Admin versus end user
 
 Some of our systems have two explicit user roles. An admin role and an end user role (Learning Management System, Content Management System., API Management etc., Travel Expenses).  
 The functionality for the end user is often only a small subset of the admin functionality.   
@@ -81,7 +81,7 @@ I'm sure you will encounter a lot of obstacles to solve.
 * introduce asynchronous communication  
 * and much more  
 
-## Corporate application mashups
+### Corporate application mashups
 
 Goal of the SCS pattern is to help splitting monolithic applications.
 But I think it is also a pattern how to compose existing applications to a combined offer.
@@ -92,18 +92,20 @@ The [Frequently Asked Questions page](http://scs-architecture.org/faq.html) of s
 > “Self-Contained System” describes best what’s at the core of the concept: Each system should work by itself. Together they form a “System of Systems”.
 
 SCS divides micro and macro architecture
-> ###SCSs are very isolated — how can they still form one system?
+
+> ### SCSs are very isolated — how can they still form one system?
 >
 > The goal of the SCS approach is to localize decisions. However, to make a system of SCSs work together, some decisions affecting all of them need to be made. We can distinguish:  
-> - Local decisions in one SCS are called micro architecture. This includes almost all technical decisions e.g. the programming language or the frameworks.  
-> - Decisions that can only be made on the global level are called macro architecture. Actually, only very few things fall into this category, most importantly the protocol SCSs can use to communicate with each other, the approach used for UI integration, and possibly a way to do data replication.  
+> * Local decisions in one SCS are called micro architecture. This includes almost all technical decisions e.g. the programming language or the frameworks.  
+> * Decisions that can only be made on the global level are called macro architecture. Actually, only very few things fall into this category, most importantly the protocol SCSs can use to communicate with each other, the approach used for UI integration, and possibly a way to do data replication.  
 
 SCS also includes statements about UIs.
+
 > We believe [ROCA](http://roca-style.org/) is a good approach for web front ends for SCS because that approach makes it easy to combine UIs from several SCSs to one. 
 
 The article [Transclusion in self-contained systems](https://www.innoq.com/en/blog/transclusion/) contains a good discussion about different possible approaches.
 
-## Conclusion
+### Conclusion
 
 I like the SCS approach. It describes how a migration can happen in small, manageable steps with minimized risk of failure.
 It leads to an evolutionary modernization of big and complex systems.
