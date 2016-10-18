@@ -3,25 +3,25 @@ layout: post
 title: SCS - Self-Contained Systems
 subtitle: Thoughts about Self-Contained Systems architecture pattern  
 category: api
-tags: [cto, open-source, api, devops]
+tags: [cto, microservice, devops]
 author: rainer_zehnle
 author_email: rainer.zehnle@haufe-lexware.com 
 header-img: "images/bg-post-clover.jpg"
 ---
 
-In September 2016 I attended the [Software Architecture Summit 2016] (http://software-architecture-summit.de/) in Berlin.
+In September 2016 I attended the [Software Architecture Summit 2016](http://software-architecture-summit.de/) in Berlin.
 
-I listened to a talk from [Eberhard Wolff](https://www.innoq.com/de/staff/eberhard-wolff/) about "Self-contained Systems: Ein anderer Ansatz für Microservices".
+I listened to a talk from [Eberhard Wolff](https://www.innoq.com/de/staff/eberhard-wolff/) about "**Self-contained Systems: Ein anderer Ansatz für Microservices**".
 The idea behind the [SCS](http://scs-architecture.org/) approach is really convincing. It's like a recipe with valuable ingredients.
 
-Use the mindset of microservices as basis, add your web application know-how, season it with asynchronous communication and finally decorate it with an own UI per SCS.
+Use the mindset of microservices as basis, add your web application know-how, season it with asynchronous communication and finally decorate it with an own UI per SCS.  
 The result is a concept to split a monolithic application in many smaller web applications collaborating with another.  
-The website [scs-architecture.org](http://scs-architecture.org/) describes the architecture pattern and contains a self-explanatory [slidedeck](https://speakerdeck.com/player/e74a068d06a949cdb358a55ca17d2dc5#).
+The website [scs-architecture.org](http://scs-architecture.org/) describes the architecture pattern and contains a self-explanatory [slidedeck](https://speakerdeck.com/player/e74a068d06a949cdb358a55ca17d2dc5#).  
 It's not possible to give a better introduction. Please read the website [scs-architecture.org](http://scs-architecture.org/). 
 
 Nevertheless I copied the main characteristics:
 
-##SCS Characteristics
+## SCS Characteristics
 
 1. Each SCS is an autonomous web application
 2. Each SCS is owned by one team
@@ -32,9 +32,9 @@ Nevertheless I copied the main characteristics:
 7. To avoid tight coupling an SCS should share no business code with other SCSs
 
 {:.center}
-![SCS parts]({{ site.url }}/images/SCSParts.png){:style="margin:auto"}
+![SCS parts]({{ site.url }}/images/scs-parts.png){:style="margin:auto"}
 
-##Akademie and SCS
+## Akademie and SCS
 The more I heard about Self contained Systems the more I was convinced that the pattern describes the way the Akademie Domain is reorganized.
 
 Quote from [Frequently Asked Questions page](http://scs-architecture.org/faq.html)
@@ -43,17 +43,17 @@ Quote from [Frequently Asked Questions page](http://scs-architecture.org/faq.htm
 This is the example of SCS systems from Eberhard Wolff.  
 
 {:.center}
-![SCS modules example]({{ site.url }}/images/SCSModules.png){:style="margin:auto"}
+![SCS modules example]({{ site.url }}/images/scs-modules.png){:style="margin:auto"}
 
 Looks a lot like the Akademie domain strategy. 
 Isn't it cool to refactor a whole domain and finally find a named pattern for it?
 
-##Start with a small amount of systems
+## Start with a small amount of systems
 What attracts me most on SCS is the approach to divide an existing monolith in a small amount of separate web applications.
 You divide in e.g. 2-5 SCS. I'm sure that you learn a lot even while splitting a monolith in two pieces.
 I believe it's easier to define a clear boundary for a few systems than to divide in ten or even fifty microservices.
 
-##Admin versus end user
+## Admin versus end user
 Some of our systems have two explicit user roles. An admin role and an end user role (Learning Management System, Content Management System., API Management etc., Travel Expenses).  
 The functionality for the end user is often only a small subset of the admin functionality.   
 The requirements for a cool and easy to use UI are different from those for a functional driven admin UI.   
@@ -63,13 +63,13 @@ System availability during normal office hours for admins might be ok but a no g
 
 Therefore it is a reasonable first step to divide the system in an end user and an admin system.
 I'm sure you will encounter a lot of obstacles to solve.  
-- divide the data storage and rethink the storage approach for each system  
-- do not share the business code  
-- establish devops chain for two (now) independent systems  
-- introduce asynchronous communication  
-- and much more  
+* divide the data storage and rethink the storage approach for each system  
+* do not share the business code  
+* establish devops chain for two (now) independent systems  
+* introduce asynchronous communication  
+* and much more  
 
-##Corporate application mashups
+## Corporate application mashups
 Goal of the SCS pattern is to help splitting monolithic applications.
 But I think it is also a pattern how to compose existing applications to a combined offer.
 And that's exactly what we strive for when we talk about our **corporate strategy**.
@@ -90,7 +90,7 @@ SCS also includes statements about UIs.
 
 The article [Transclusion in self-contained systems](https://www.innoq.com/en/blog/transclusion/) contains a good discussion about different possible approaches.
 
-##Conclusion
+## Conclusion
 I like the SCS approach. It describes how a migration can happen in small, manageable steps with minimized risk of failure.
 It leads to an evolutionary modernization of big and complex systems.
 
