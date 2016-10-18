@@ -14,8 +14,9 @@ In September 2016 I attended the [Software Architecture Summit 2016](http://soft
 I listened to a talk from [Eberhard Wolff](https://www.innoq.com/de/staff/eberhard-wolff/) about "**Self-contained Systems: Ein anderer Ansatz für Microservices**".
 The idea behind the [SCS](http://scs-architecture.org/) approach is really convincing. It's like a recipe with valuable ingredients.
 
-Use the mindset of microservices as basis, add your web application know-how, season it with asynchronous communication and finally decorate it with an own UI per SCS.  
-The result is a concept to split a monolithic application in many smaller web applications collaborating with another.  
+Use the mindset of microservices as basis, add your web application know-how, season it with asynchronous communication and finally decorate it with an own UI per SCS. 
+The result is a concept to split a monolithic application in many smaller web applications collaborating with another.
+
 The website [scs-architecture.org](http://scs-architecture.org/) describes the architecture pattern and contains a self-explanatory [slidedeck](https://speakerdeck.com/player/e74a068d06a949cdb358a55ca17d2dc5#).  
 It's not possible to give a better introduction. Please read the website [scs-architecture.org](http://scs-architecture.org/). 
 
@@ -66,11 +67,11 @@ After you learned your lessons I'm sure you can savely increase the number of mi
 ### Admin versus end user
 
 Some of our systems have two explicit user roles. An admin role and an end user role (Learning Management System, Content Management System, API Management, Travel Expenses etc.).  
-The functionality for the end user is often only a small subset of the admin functionality.   
-The requirements for a cool and easy to use UI are different from those for a functional driven admin UI.   
-Mobile support for end users might be a Must but not for the admin fuctionality.  
-The number of admins is often a fraction of the end users.  
-System availability during normal office hours for admins might be ok but a no go for end users.        
+* The functionality for the end user is often only a small subset of the admin functionality.   
+* The requirements for a cool and easy to use UI are different from those for a functional driven admin UI.   
+* Mobile support for end users might be a Must but not for the admin functionality.  
+* The number of admins is often a fraction of the end users.  
+* System availability during normal office hours for admins might be ok but a no go for end users.        
 
 Therefore it is a reasonable first step to divide the system in an end user and an admin system.
 I'm sure you will encounter a lot of obstacles to solve.  
