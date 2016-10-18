@@ -66,7 +66,8 @@ After you learned your lessons I'm sure you can savely increase the number of mi
 
 ### Admin versus end user
 
-Some of our systems have two explicit user roles. An admin role and an end user role (Learning Management System, Content Management System, API Management, Travel Expenses etc.).  
+Some of our systems have two explicit user roles. An admin role and an end user role (Learning Management System, Content Management System, API Management, Travel Expenses etc.).
+
 * The functionality for the end user is often only a small subset of the admin functionality.   
 * The requirements for a cool and easy to use UI are different from those for a functional driven admin UI.   
 * Mobile support for end users might be a Must but not for the admin functionality.  
