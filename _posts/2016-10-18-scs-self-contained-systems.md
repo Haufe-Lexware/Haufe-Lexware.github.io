@@ -91,6 +91,12 @@ The [Frequently Asked Questions page](http://scs-architecture.org/faq.html) of s
 
 > “Self-Contained System” describes best what’s at the core of the concept: Each system should work by itself. Together they form a “System of Systems”.
 
+{:.center}
+![SCS modules example]({{ site.url }}/images/scs-realsystems.png){:style="margin:auto"}
+
+{:.center}
+![SCS modules example](https://raw.githubusercontent.com/Kodrafo/Kodrafo.github.io/master/images/scs-realsystems.png){:style="margin:auto"}
+
 SCS divides micro and macro architecture
 
 > ### SCSs are very isolated — how can they still form one system?
