@@ -35,7 +35,7 @@ Nevertheless I copied the main characteristics:
 ![SCS parts]({{ site.url }}/images/scs-parts.png){:style="margin:auto"}
 
 {:.center}
-![SCS parts](https://github.com/Kodrafo/Kodrafo.github.io/blob/master/images/scs-parts.png){:style="margin:auto"}
+![SCS parts](https://raw.githubusercontent.com/Kodrafo/Kodrafo.github.io/master/images/scs-parts.png){:style="margin:auto"}
 
 ### Akademie and SCS
 
@@ -51,7 +51,7 @@ This is the example of SCS systems from Eberhard Wolff.
 ![SCS modules example]({{ site.url }}/images/scs-modules.png){:style="margin:auto"}
 
 {:.center}
-![SCS modules example](https://github.com/Kodrafo/Kodrafo.github.io/blob/master/images/scs-modules.png){:style="margin:auto"}
+![SCS modules example](https://raw.githubusercontent.com/Kodrafo/Kodrafo.github.io/master/images/scs-modules.png){:style="margin:auto"}
 
 Looks a lot like the Akademie domain strategy.   
 Isn't it cool to refactor a whole domain and finally find a named pattern for it?
@@ -65,7 +65,7 @@ After you learned your lessons I'm sure you can savely increase the number of mi
 
 ### Admin versus end user
 
-Some of our systems have two explicit user roles. An admin role and an end user role (Learning Management System, Content Management System., API Management etc., Travel Expenses).  
+Some of our systems have two explicit user roles. An admin role and an end user role (Learning Management System, Content Management System, API Management, Travel Expenses etc.).  
 The functionality for the end user is often only a small subset of the admin functionality.   
 The requirements for a cool and easy to use UI are different from those for a functional driven admin UI.   
 Mobile support for end users might be a Must but not for the admin fuctionality.  
@@ -103,7 +103,7 @@ SCS also includes statements about UIs.
 
 > We believe [ROCA](http://roca-style.org/) is a good approach for web front ends for SCS because that approach makes it easy to combine UIs from several SCSs to one. 
 
-The article [Transclusion in self-contained systems](https://www.innoq.com/en/blog/transclusion/) contains a good discussion about different possible approaches.
+The article [Transclusion in self-contained systems](https://www.innoq.com/en/blog/transclusion/) contains a good discussion about different possible UI approaches.
 
 ### Conclusion
 
