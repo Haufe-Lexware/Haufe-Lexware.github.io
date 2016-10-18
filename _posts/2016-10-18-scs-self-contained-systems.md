@@ -106,7 +106,7 @@ SCS divides micro and macro architecture
 > * Local decisions in one SCS are called micro architecture. This includes almost all technical decisions e.g. the programming language or the frameworks.  
 > * Decisions that can only be made on the global level are called macro architecture. Actually, only very few things fall into this category, most importantly the protocol SCSs can use to communicate with each other, the approach used for UI integration, and possibly a way to do data replication.  
 
-SCS also includes statements about UIs.
+SCS also includes statements about UIs.   
 > We believe [ROCA](http://roca-style.org/) is a good approach for web front ends for SCS because that approach makes it easy to combine UIs from several SCSs to one. 
 
 The article [Transclusion in self-contained systems](https://www.innoq.com/en/blog/transclusion/) contains a good discussion about different possible UI approaches.
