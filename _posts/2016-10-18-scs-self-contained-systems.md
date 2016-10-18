@@ -35,9 +35,6 @@ Nevertheless I copied the main characteristics:
 {:.center}
 ![SCS parts]({{ site.url }}/images/scs-parts.png){:style="margin:auto"}
 
-{:.center}
-![SCS parts](https://raw.githubusercontent.com/Kodrafo/Kodrafo.github.io/master/images/scs-parts.png){:style="margin:auto"}
-
 ### Akademie and SCS
 
 The more I heard about Self-contained Systems the more I was convinced that the pattern describes the way the Akademie Domain is reorganized.
@@ -50,9 +47,6 @@ This is the example of SCS systems from Eberhard Wolff.
 
 {:.center}
 ![SCS modules example]({{ site.url }}/images/scs-modules.png){:style="margin:auto"}
-
-{:.center}
-![SCS modules example](https://raw.githubusercontent.com/Kodrafo/Kodrafo.github.io/master/images/scs-modules.png){:style="margin:auto"}
 
 Looks a lot like the Akademie domain strategy.   
 Isn't it cool to refactor a whole domain and finally find a named pattern for it?
@@ -95,9 +89,6 @@ The [Frequently Asked Questions page](http://scs-architecture.org/faq.html) of s
 
 {:.center}
 ![SCS modules example]({{ site.url }}/images/scs-realsystems.png){:style="margin:auto"}
-
-{:.center}
-![SCS modules example](https://raw.githubusercontent.com/Kodrafo/Kodrafo.github.io/master/images/scs-realsystems.png){:style="margin:auto"}
 
 SCS divides micro and macro architecture
 
