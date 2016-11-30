@@ -14,7 +14,7 @@ header-img: "images/bg-post-api.jpg"
 Keeping with the trend of having events based on technical topics that we are getting into at Haufe Group, we just had our Microservices Architecture Day - #msaday - internal event. We are currently looking to adopt microservices design patterns for new software and to refactor our older systems towards microservices andto make it easier to manage and grow our software. #msaday was a lot of fun and we were joined by many colleagues from other parts of Germany and from our offices in Switzerland, Romania and Spain.
 
 {:.center}
-![Microservices audience](images\Microservices-Day\Satisfied-Microservices-Customer.JPG){:style="margin:auto"}
+![Microservices audience](/images/Microservices-Day/Satisfied-Microservices-Customer.JPG){:style="margin:auto"}
 
 ### Help from outside
 
