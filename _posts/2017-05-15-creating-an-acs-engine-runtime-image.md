@@ -29,6 +29,7 @@ To enable this, we ended up doing the following:
 2. Compile the `acs-engine` binary using the excellent pre-existing `devenv.sh` script
 3. Take out the binary from the build
 4. Create a minimalistic `busybox` based docker image, which can be used as a drop-in replacement for the `acs-engine` binary.
+5. Optionally push to our own docker registry.
 
 This image can be pushed to either docker hub (if you have an account), or preferably to your own docker registry; this enables you to actually keep track of the version of `acs-engine` you used for deploying at a specific point of time, or you can try out new versions of `acs-engine`, but still revert to an older version, which works for you.
 
