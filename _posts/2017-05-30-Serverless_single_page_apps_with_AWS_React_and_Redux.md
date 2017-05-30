@@ -129,7 +129,8 @@ The Reducers are Pure functions, this pure function get as params the state and 
         default:
             return state;
     }
-}```
+}
+```
 
 The Store is the single point of true,is the place where you store your app state and the store is also able to dispatch actions and tho register receivers. Here is how you configure it:
 
