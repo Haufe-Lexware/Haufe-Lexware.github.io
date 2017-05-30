@@ -11,7 +11,7 @@ header-img: "images/bg-post-clover.jpg"
 
 ### Background story
 
-I had a presentation last week at [ITCamp](https://itcamp.ro) about this, you can find the slides on [SlideShare](https://www.slideshare.net/melaniadanciu/serverless-single-page-apps-with-react-and-redux-at-itcamp-2017). A very interesting conferences with 40+ speakers. 40+ sessions and 500+ attendiees. My session was about Serverless and how we built a cool project fully serverless with AWS, React and Redux. 
+I had a presentation last week at [ITCamp](https://itcamp.ro) about Serverless single page apps and you can find the slides on [SlideShare](https://www.slideshare.net/melaniadanciu/serverless-single-page-apps-with-react-and-redux-at-itcamp-2017).ITCamp is a very interesting conferences with 40+ speakers. 40+ sessions and 500+ attendees. It had a lot of interesting topics with very curious attendees. My presentation was about my jorney into building a Serverless project with no servers to manage for backend and frontend. 
 
 All started with a prototype in .Net Core witch showed us the main components of our app. And yes, .Net Core, because I am a .Net developer under cover :). I love C# and the powerful .Net framework but going back to our app…
 
@@ -24,9 +24,9 @@ Here are some challenges:
 There are hundreds of solutions for this problem and I picked one which I will try to present to you in the next lines.
 And to add one more challenge I was asked what does it mean to use Lambda for this project. And when I say Lambda, is not the Lambda from .Net is AWS Lambda Functions.
 
-Having also this last thing and having some knowledge about micro-services, SOA and static websites I decided to go all Serverless. There are a lot of books on this topic, a lot of articles and hundreds of pages of documentation on Amazon docs about their offer.
+Having also this last thing and having some knowledge about micro-services, SOA and static websites I decided to go all Serverless. There are a lot of books on this topic, a lot of articles and hundreds of pages of documentation on Amazon docs about their offer. The backend is done using Lambda Functions and I already wrote about them in [my last blogpost](http://dev.haufe.io/Serverless_with_AWS_at_DevTalks/). 
  
-### First Step - Static Website
+### And now the Static Website
 
 First challenge the Frontend and making it a Static Website. In a nutshell this means I should  be able to have the entire website deployed as HTML pages with some Java Script files and CSS files, and all the data needed should be requested using AJAX calls with no server rendering what so ever.
  Again the question is what to use for data binding, templating, and all of that…:
@@ -98,7 +98,7 @@ You can [read from here about state and props](https://facebook.github.io/react/
 
 - Another is … Be a good citizen and free the space when you don’t need it using `componentWillUnmount()`.[More about it here.](http://codepen.io/gaearon/pen/amqdNA?editors=0010) 
 
-- When you `setState()` you are not forced to changed the entire state, you can change just a property of the state and the state is merged. 
+- When you `setState()` you are not forced to change the entire state, you can change just a property of the state and the state is merged. 
 
 - And now a cool one, [data flow is unidirectional](https://facebook.github.io/react/docs/lifting-state-up.html), just one component can own the state and send it to its children as props, but just that one component which owns the state can manage that data. There should be a single ‘source of truth’ for any data that changes in a React app. 
 
@@ -117,7 +117,7 @@ There are some very nice videos related to Redux and here are 2 of them:
 - Dan Abramov - [Live React: Hot Reloading with Time Travel at react-europe 2015](https://www.youtube.com/watch?v=xsSnOQynTHs)
 - Dan Abramov - [The Redux Journey at react-europe 2016](https://www.youtube.com/watch?v=uvAXVMwHJXU) 
 
-First I used Flux for data flow, but for me Flux was to flexible and to verbouse. And after a couple of days of playing with it I started looking for some structure and the structure from Redux I liked the most. What Redux is, is the Reducers+Flux. It uses a lot the concepts from functional programming and I will recomand to check them out before starting writing your app
+First I used Flux for data flow, but for me Flux was to flexible and to verbose. And after a couple of days of playing with it I started looking for some structure and the structure from Redux I liked the most. What Redux is, is the Reducers+Flux. It uses a lot the concepts from functional programming and I will recommend to check them out before starting writing your app
 
 The main elements of Redux are: Reducer, Store and Actions. 
 The Reducers are Pure functions, this pure function get as params the state and the action to change the state and base on action it returns a new state object. Here is one example. 
@@ -132,7 +132,7 @@ The Reducers are Pure functions, this pure function get as params the state and 
 }
 ```
 
-The Store is the single point of true,is the place where you store your app state and the store is also able to dispatch actions and tho register receivers. Here is how you configure it:
+The Store is the single point of true, is the place where you store your app state and the store is also able to dispatch actions and to register receivers. Here is how you configure it:
 
 ```export default function configureStore(initialState) {
     const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -148,16 +148,16 @@ The Store is the single point of true,is the place where you store your app stat
 }
 ``` 
 
-And ofcourse there are the Actions, which are the events which are called when you want to change the state. Actions are just simple functions which return the type of the action and a playload, for example when I create a contact I return the `CREATE_CONTACT_SUCCESS` and the payload, which in this case is the created contact. 
+And of course there are the Actions, which are the events which are called when you want to change the state. Actions are just simple functions which return the type of the action and a playload, for example when I create a contact I return the `CREATE_CONTACT_SUCCESS` and the payload, which in this case is the created contact. 
 
 ```export function createContactSuccess(contact) {
     return { type: ActionTypes.CREATE_CONTACT_SUCCESS, contact: contact }
 }
 ```
 
-What I have in my app I have diffrent folders for every component, one for actions, one for reducers, and one for store. 
+What I have in my app I have different folders for every component, one for actions, one for reducers, and one for store. 
 
-I am using also REDUX_DEVTOOLS and I configured it in my store. With it you do not need the `console.log()` to see what is happending with your actions, store state, go back to a particular state and even copy a unit test from there.
+I am using also REDUX_DEVTOOLS and I configured it in my store. With it you do not need the `console.log()` to see what is happening with your actions, store state, go back to a particular state and even copy a unit test from there.
 
 And this is Redux, is very simple to use because if you want to create an action you go to actions folder create a function for it and that's it, if you want to handle these actions you create a reducer and that it. You can change your app state just in reducer, so if something is wrong with you date have a look in your reducer. 
 
@@ -169,24 +169,19 @@ You can use [react-test-renderer](https://www.npmjs.com/package/react-test-rende
 
 Snapshot testing is another new idea from Facebook. It provides an alternate way to write tests without any assertions. To write tests using assertions, Enzyme is quite useful.
 
-Not so nice fact related to behaviour testing is that you can not simulate a button click in a form :(, see the [issue](https://github.com/airbnb/enzyme/issues/308).
+Not so nice fact related to behaviour testing is that you cannot simulate a button click in a form :(, see the [issue](https://github.com/airbnb/enzyme/issues/308).
 
 And to test Redux properly you can have a look at [this article first](http://academy.plot.ly/react/6-testing/). 
 
 ### Style guide
-To write proper Java Script is interesting, and if you are alone on your project most probably you will have a consistent code but having more then one member in the project and keeping the code consistent is challenging and this for sure screams for a coding style guide. What we have is our project is the style guide is from [Airbnb](https://github.com/airbnb/javascript/tree/master/react):
+To write proper Java Script is interesting, and if you are alone on your project most probably you will have a consistent code but having more than one member in the project and keeping the code consistent is challenging and this for sure screams for a coding style guide. What we have is our project is the style guide is from [Airbnb](https://github.com/airbnb/javascript/tree/master/react):
 - Always start a component name with a capital letter
 - All the component properties are camelCase written
 - The test file for a component is ComponentName.test.js
 
-
-### The Backend
-
-The backend is done using Lambda Functions and I already spoak about it in [my last blogpost](http://dev.haufe.io/Serverless_with_AWS_at_DevTalks/). 
-
 ### Some last words
 
-For sure is a change in your mindset, and you need to focus on your main functionality and everything else use as service. On the client you need to change your imeplementation into functional programming and being stateless and immutable. We need to work with very small components, reusable, easy to test, easy to build and change being it on the server or on the client.   
+For sure is a change in your mindset, and you need to focus on your main functionality and everything else use as service. On the client, you need to change your implementation into functional programming and being stateless and immutable. We need to work with very small components, reusable, easy to test, easy to build and change being it on the server or on the client.   
 
 ### Other Resources
 
