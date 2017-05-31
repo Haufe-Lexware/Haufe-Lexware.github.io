@@ -122,7 +122,8 @@ First I used Flux for data flow, but for me Flux was too flexible and too verbos
 The main elements of Redux are: Reducer, Store and Actions. 
 The Reducers are Pure functions, this pure function get as params the state and the action to change the state and base on action it returns a new state object. Here is one example. 
 
-```export default function displayReducer(state =InitialState.display, action) {
+```
+export default function displayReducer(state =InitialState.display, action) {
     switch (action.type) {
         case ActionTypes.DISPLY_CONTACT:
             return { ...state, selectedContact: action.contact }
@@ -134,7 +135,8 @@ The Reducers are Pure functions, this pure function get as params the state and 
 
 The Store is the single point of truth, is the place where you store your app state and the store is also able to dispatch actions and to register receivers. Here is how you configure it:
 
-```export default function configureStore(initialState) {
+```
+export default function configureStore(initialState) {
     const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
     return createStore(
         rootReducer,
