@@ -152,7 +152,8 @@ export default function configureStore(initialState) {
 
 And of course there are the Actions, which are the events which are called when you want to change the state. Actions are just simple functions which return the type of the action and a playload, for example when I create a contact I return the `CREATE_CONTACT_SUCCESS` and the payload, which in this case is the created contact. 
 
-```export function createContactSuccess(contact) {
+```
+export function createContactSuccess(contact) {
     return { type: ActionTypes.CREATE_CONTACT_SUCCESS, contact: contact }
 }
 ```
