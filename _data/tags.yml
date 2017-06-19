@@ -39,3 +39,12 @@
 
 - slug: automation
   name: Automation
+
+- slug: serverless
+  name: Serverless
+  
+- slug: data
+  name: Data
+
+- slug: bots
+  name: Bots
