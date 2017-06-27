@@ -6,7 +6,7 @@ category: dev
 tags: [general, cloud, microservice, devops, docker]
 author: martin_danielsson
 author_email: martin.danielsson@haufe-lexware.com
-header-img: "images/new/Exportiert_11.jpg"
+header-img: "images/new/Exportiert_43.jpg"
 ---
 
 In the beginning of this year, Azure announced that its Azure Container Services for Kubernetes (ACS) is going Generally Available. I did a review of the [State of Kubernetes on Azure](/state-of-kubernetes-on-azure/) back then, and in the meantime, quite some things have happened with ACS, more possibilities have been opened up, and I thought it might be a good idea to     revisit the topic.
