@@ -88,12 +88,7 @@ They didn’t know it then, but they made a classical Design-Thinking Process.
 
 
 ## At the End.
-So let us work on the same company’s vision.
+UX is not working in small units alone. It's widing out. 
+The example of the Beatles shows, what can happen, when experts of all departments working together on the same and believe in that. 
 
-They drove technicians crazy by trying out things never tried out before, applying their inspirational creativity to all departments participating in the production. And the result is something extraordinary.
-
-The Beatles have shown us that by creating a team where everyone works to the same vision extraordinary things can happen. It’s about all departments working together on one vision. 
-
-I hope that you now understand, why Sgt. Pepper is good example for good UX.
-A perfect product is great one when the whole experience is extraordinary… evokes emotion, like surprise and unexpected things.
-
+A perfect product is a great one when the whole experience is extraordinary and evokes emotions like surprise and unexpected things.
