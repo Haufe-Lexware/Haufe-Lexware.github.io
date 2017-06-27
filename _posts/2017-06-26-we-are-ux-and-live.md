@@ -47,44 +47,45 @@ It’s important to note, that a bad business strategy can’t be saved by techn
 There are a lot of good UX examples, first of all Apple (just think of the groundbreaking impact of the iPhone in the industry and our lives), Google, Uber and many other brands that have changed our lives forever. To show you that not only we designers and information architects are UX experts but that UX is everywhere and anytime, I want to focus on a different example with good UX results.  
 
 
-### Beatles St. Pepper; It’s UX because it’s …
+### Beatles St. Pepper - an example of great experience
 Now you may ask: Why is this a good example for UX? Let me explain:
 According to the Rolling Stone magazine in 2013 this record is the most important record in the World! From 1967 until 1971 it was the most selling album of the World. To this day it is ranked 59 of the World.
 
 The success of this record is the sum of a lot of details and aspects we can directly connect to what we talk about and work on today as UX experts. Actually the Beatles didn‘t know – but they created a kind of a Design-Thinking Process.
 
-The creation of this record was a journey in itself. Before this record was released, the Beatles decided to never go back on stage. They went on holiday! One went to India to learn how to play the sitar, one went to Italy and Paul and John had time to speak and hear other musicians, what we now call Benchmarking, and listened to customer feedback (User research). We call this Needfinding as a part of User Centered Design. 
-When they finished their holidays, they all came back together and talked about their experiences (Notice: Thinking products as a journey and experience). They realized they found something special and something new was in the air! So they defined clear goals for their new record. What they really defined is what we call a product vision: 
+The creation of this record was a journey in itself. Before this record was released, the Beatles decided to never go back on stage. They went on holiday! One went to India to learn how to play the sitar, one went to Italy and Paul and John had time to speak and hear other musicians, what we now call Benchmarking, and listened to customer feedback (User research). 
+We call this Needfinding as a part of User Centered Design. 
+When they finished their holidays, they all came back together and talked about their experiences (Notice: Thinking products as a journey and experience). They realized they found something special and something new was in the air! 
 
-1.	First of all the sound must be something new. It‘s Disruptive. 
+-	They realized they found something special and something new was in the air! 
+-	They are inspired by the album of the Beach Boys, which was a great album and had an incredible impact in the music world. 
+-	The Indian-Music and the Hindu-Philosophy (love and peace) were a good answer for the Vietnam-war and other conflicts on the world.
 
-2.	The record must be easy listening for the fans. And everybody knows: It‘s complicated to keep things easy. 
 
 A famous quote form Paul McCartney is that “The Beatles wanted to be the leaders of the Generation”. This not only influenced the music and sound they created but also had a wide bigger impact on everyone by spreading the message of peace and love during times of war and conflict. 
 
-The Beatles were inspired by the album of the Beach Boys, which was a great album and had an incredible impact in the music world. The Beatles wanted to compete with this record and create something bigger and better! 
+But let us embark on some details that fit perfectly to our UX environment nowadays.
 
-During the Production of the record, they had a lot of more disruptive ideas. (-> ah, it’s agile):
+### It’s UX because it …
 
--	They want to tell a story (->Storytelling), so they made the first concept-record in the world. 
 
--	The lyrics were so important to the Beatles that they wanted every fan to be able to read them. Nobody has done this before. 
+*has a product vision*
+After doing the holiday research - the Beatles started to set up their product vision:
 
--	So they wanted to make a record that was much more complex in its production. (Try out new instruments, new technologies of mixing, and they decided to use a complete orchestra). 
+- First of all, they wanted to reinvented themselves – get a new image (Being Disruptive)
+- As consequence the music sylte must be something new. 
+- The record must be easy listening for the fans. And everybody knows: It‘s complicated to make things easy. 
+- They wanted to be the leaders of the love and peace generation. 
+- Beat the Beach Boys! They wanted to be bigger and better than the Beach Boys. 
 
--	Packaging: They decided to make a double cover for their record, it was new.
 
--	The dress code for the Beatles before selling Sgt Pepper was a jacket and a tie, very well dressed! Now you can see that they created a new look. Full of colour and happiness. 
 
--	They thought about the image on the cover. Before, no musician was really interested in that. But the Beatles thought that it was as important for marketing. So they chose an artist to turn the cover into an artwork itself.
 
--	What we‘ve seen is that the Beatles looked at, the music, lyrics, cover design and their image. These are all touchpoints for the customer. 
 
--	Material: They wanted a coloured vinyl instead of the usual black one. But this idea wasn’t realized, because Technology said that it wasn't possible to do and the Business said, that the user only wants record with a black vinyl. (Which was a doubtful assumption).
 
-They carried out what we today call User Testing as they provided small Radio Station with unpublished songs, to get an objective feedback. And the positive feedback was so strong, they even felt urged to publish their record before the planned release.
 
-They didn’t know it then, but they made a classical Design-Thinking Process.
+
+
 
 
 ## At the End.
