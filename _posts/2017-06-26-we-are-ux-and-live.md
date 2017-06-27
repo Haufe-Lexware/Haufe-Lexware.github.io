@@ -26,8 +26,7 @@ To make this real, we all have to work together, work towards one goal, everyone
 When you would enter Google and search for the term UX, you'll find some infographic similar to the following. I believe these explain quite well that UX is composed of three areas: Business, Technology and Design. Each of these disciplines has a great impact on UX. Let me iterate on this a bit further.
 
 {:.center}
-![UX and Venn](/images/design/Blog_Bild1.jpg){:style="margin:auto"}
-how we see ux in our company
+![UX and Venn](/images/design/Blog_Bild4.jpg){:style="margin:auto"}
 
 - Business units must have a vision and a clear direction they're aiming for. We can‘t expect that all parts work together successfully if they don’t have a clear vision.
 
@@ -54,6 +53,9 @@ Now you may ask: Why is this a good example for UX? Let me explain:
 According to the Rolling Stone magazine in 2013 this record is the most important record in the World! From 1967 until 1971 it was the most selling album of the World. To this day it is ranked 59 of the World.
 
 The success of this record is the sum of a lot of details and aspects we can directly connect to what we talk about and work on today as UX experts. Actually the Beatles didn‘t know – but they created a kind of a Design-Thinking Process.
+
+{:.center}
+![Beatles Design Thinking Process](/images/design/Folie1.jpg){:style="margin:auto"}
 
 The creation of this record was a journey in itself. Before this record was released, the Beatles decided to never go back on stage. They went on holiday! One went to India to learn how to play the sitar, one went to Italy and Paul and John had time to speak and hear other musicians, what we now call Benchmarking, and listened to customer feedback (User research). 
 We call this Needfinding as a part of User Centered Design. 
@@ -92,9 +94,11 @@ The production took 4 months, much longer than any production before. (the produ
 They carried out what we today call User Testing as they provided small radio stations with unpublished songs, to get an objective feedback. And the positive feedback was so strong, that they even felt urged to publish their record before the planned release. 
 
 
-### It’s about creating something NEW!
+### It’s about creating NEW experiences!
 But it is not just these basic points of UX, it is whole experience that's counts with the St Pepper album. Let me show you examples, what the Beatles did during their process, what was not common. 
 
+{:.center}
+![Beatles and NEW](/images/design/Folie2.jpg){:style="margin:auto"}
 
 #### Business meets Design 
 The Bealtes thought about the image on the cover. Before, no musician was really interested in that. But they thought that it was as important for marketing. So they chose an artist to turn the cover into an artwork itself. That was new NEW! 
