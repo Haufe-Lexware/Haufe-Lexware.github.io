@@ -70,7 +70,7 @@ But let us embark on some details that fit perfectly to our UX environment nowad
 
 ### It’s UX because …
 
-**it has a product vision**
+#### it has a product vision
 
 After doing the holiday research - the Beatles started to set up their product vision:
 
@@ -81,13 +81,13 @@ After doing the holiday research - the Beatles started to set up their product v
 - Beat the Beach Boys! They wanted to be bigger and better than the Beach Boys. 
 
 
-**it's agile**
+#### it's agile
 
 During the production of the record, they had a lot of more disruptive ideas.
 The production took 4 months, much longer than any production before. (the production of the first Beatles record took only one week. Today a normal production of a record takes 1 year).
 
 
-**it has user testing**
+#### it has user testing
 
 They carried out what we today call User Testing as they provided small radio stations with unpublished songs, to get an objective feedback. And the positive feedback was so strong, that they even felt urged to publish their record before the planned release. 
 
