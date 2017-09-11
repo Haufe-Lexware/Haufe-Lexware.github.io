@@ -6,7 +6,7 @@ category: dev
 tags: [javascript, react, redux, web]
 author: Camil Bradea
 author_email: camil.bradea@haufe-lexware.com 
-header-img: ""
+header-img: "images/intro-redux/header.png"
 ---
 
 
@@ -27,7 +27,7 @@ ac
 Redux has three fundamental principles:
 - single source of truth
 
-    The whole state of the application is stored in an object tree (within a single store). Visualize the state as a “model”,
+    The whole state of the application is stored in an object tree (within a single store). Visualize the state as a ï¿½modelï¿½,
     but without setters. As a plus, a single state tree enables us to debug our application with ease.
 
 - state is read-only
@@ -344,9 +344,9 @@ Finally, we will call this action creator in the `componentDidMount` lifecycle m
 
 Side note: if you are wondering why are we calling the action creator in componentDidMount instead of other 
 lifecycle methods, I have found a couple of good reasons [here](https://tylermcginnis.com/react-interview-questions/):
-> You can’t guarantee the AJAX request won’t resolve before the component mounts. If it did, that would mean that you’d be trying to setState on an unmounted component, which not only won’t work, but React will yell at you for. Doing AJAX in componentDidMount will guarantee that there’s a component to update.
+> You canï¿½t guarantee the AJAX request wonï¿½t resolve before the component mounts. If it did, that would mean that youï¿½d be trying to setState on an unmounted component, which not only wonï¿½t work, but React will yell at you for. Doing AJAX in componentDidMount will guarantee that thereï¿½s a component to update.
 
-> Fiber, the next implementation of React’s reconciliation algorithm, will have the ability to start and stop rendering as needed for performance benefits. One of the trade-offs of this is that componentWillMount, the other lifecycle event where it might make sense to make an AJAX request, will be “non-deterministic”. What this means is that React may start calling componentWillMount at various times whenever it feels like it needs to. This would obviously be a bad formula for AJAX requests.
+> Fiber, the next implementation of Reactï¿½s reconciliation algorithm, will have the ability to start and stop rendering as needed for performance benefits. One of the trade-offs of this is that componentWillMount, the other lifecycle event where it might make sense to make an AJAX request, will be ï¿½non-deterministicï¿½. What this means is that React may start calling componentWillMount at various times whenever it feels like it needs to. This would obviously be a bad formula for AJAX requests.
 
 Besides this, we need some validations:
 
@@ -357,7 +357,7 @@ Besides this, we need some validations:
     }
 
     if (this.props.isLoading) {
-        return <p>Loading…</p>;
+        return <p>Loadingï¿½</p>;
     }
 ```
 
@@ -391,7 +391,7 @@ In the end, our component will look like this:
             }
 
             if (this.props.isLoading) {
-                return <p>Loading…</p>;
+                return <p>Loadingï¿½</p>;
             }
 
             return (
