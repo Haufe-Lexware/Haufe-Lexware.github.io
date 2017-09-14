@@ -14,11 +14,11 @@ header-img: "images/intro-redux/header.png"
 ### Introduction
 
 Redux, according to the [offical docs](http://redux.js.org), is a predictable state container for JavaScript apps written by 
-Dan Abramov. It's a very lightweight implementation of Flux, which is another library for managing the state. Basically Redux 
+Dan Abramov. It's a lightweight implementation of Flux, which is another library for managing the state. Basically Redux 
 took the ideas that Flux brought in, leaving out its complexity by "borrowing" things from [Elm](http://elm-lang.org/).
 
 
-For starters, there are several key concepts to understand: store, actions / action creators, and reducers. The official documentation is very straightforward and also plenty of examples and nice analogies can be found on the internet.
+For starters, there are several key concepts to understand: store, actions / action creators, and reducers. The official documentation is pretty straightforward and also plenty of examples and nice analogies can be found on the internet.
 
 
 
@@ -61,18 +61,18 @@ Redux has three fundamental principles:
 
     **Important:** Reducers do not store state, and they do not mutate state. You pass state to the reducer and the reducer will return state.
 
-**Tip:** As a best practice, even though it's possible to have a single reducer that manages the transformation done by every action,it is better to use reducer composition - breaking down the reducer into multiple, smaller reducers, each of them handling a specific slice of the application state.
+**Tip:** As a best practice, even though it's possible to have a single reducer that manages the transformation done by every action, it is better to use reducer composition - breaking down the reducer into multiple, smaller reducers, each of them handling a specific slice of the application state.
 
 
 
 ### How it works
 
-When one action is dispatched to the store, the combined reducer catches the action and sends it to each of the smaller reducers. Each smaller reducer examines what action was passed and dictates if and how to modify that part of state that it is responsible for,producing a new state. You will find an example of a combined reducer a bit later in the article.
+When one action is dispatched to the store, the combined reducer catches the action and sends it to each of the smaller reducers. Each smaller reducer examines what action was passed and dictates if and how to modify that part of state that it is responsible for producing a new state. You will find an example of a combined reducer a bit later in the article.
 
 After each smaller reducer produces its corresponding next state, an updated state object will be saved in the store. 
 Because this is important, I'm mentioning again that the store is the single source of truth in our application. Therefore, when each action is run through the reducers, a new state is produced and saved in the store.
 
-Besides all of this, Redux comes up with another concept - action creators - which are functions that return actions. These can be linked to React components and when interacting with your application, the action creators are invoked (for example in one 
+Besides all of this, Redux comes up with another concept, action creators, which are functions that return actions. These can be linked to React components and when interacting with your application, the action creators are invoked (for example in one 
 of the lifecycle methods) and create new actions that get dispatched to the store.
 
 ```
@@ -88,20 +88,20 @@ of the lifecycle methods) and create new actions that get dispatched to the stor
 
 ### Fetching data from an API
 
-Now onto our application. All of the above code examples were just examples. We will dive into the important bits of the 
-code. Also, a github repo will be available at the end of the article, containing the entire app.
+Now onto our application. All of the above code snippets were just examples. We will now dive into the important bits of the 
+code of our app. Also, a github repo will be available at the end of the article, containing the entire app.
 
-Our app will fetch (asynchronously) data that is retrieved by an API - we already built and deployed a working API, 
-how convenient :) - and then display the fetched data as nice as my designing skills go (not too far).
+Our app will fetch (asynchronously) data that is retrieved by an API - assuming we already built and deployed a working API, 
+how convenient :) - and then display the fetched data as nice as my UI design skills go (not too far).
 
-TVmaze's public API contains a tonne of data and we will fetch all the shows they have ever aired. Then, the app will display 
+TVmaze's public API contains tonnes of data and we will fetch all the shows they have ever aired. Then, the app will display 
 all the shows, toghether with their rating and premiere date.
 
 **Designing our state**
 
 In order for this application to work properly, our state needs to have 3 properties: `isLoading`, `hasError` and `items`.
-So we will have 3 action creators and an extra action creator where we will fetch the data and call the other 3 action 
-creators based on the status or our request to the API. More details on why are we doing this, a bit later.
+So we will have one action creator for each property and an extra action creator where we will fetch the data and call the other 3 action 
+creators based on the status or our request to the API.
 
 **Action creators**
 
@@ -131,25 +131,25 @@ Let's have a look at the first 3 action creators:
 ```
 
 
-The first 2 action creators will receive a bool as an parameter and they will return an object with that bool value and
+The first 2 action creators will receive a bool as a parameter and they will return an object with that bool value and
 the corresponding type.
 
 The last one will be called after the fetching was successful and will receive the fetched items as an parameter. This
 action creator will return an object with a property called `items` that will receive as value the array of items which
-were passed as an argument. Instead if `items: items`, we can write just `items`, using an ES6 syntactic sugar called 
+were passed as an argument. Instead if `items: items`, we can just write `items`, using an ES6 syntactic sugar called 
 [property shorthand](http://es6-features.org/#PropertyShorthand).
 
 
 To visualize a bit what was described earlier, this is how it looks in [Redux DevTools](https://github.com/zalmoxisus/redux-devtools-extension):
 
-![](redux_devtools_action_creators.png)
+![](/images/intro-redux/redux_devtools_action_creators.PNG)
 
 
 
-Out of the box, action creators can return just actions. That's where [Redux Thunk](https://github.com/gaearon/redux-thunk) comes in handy. Thunk allows us to have action creators that return a function instead of an action and also, dispatch an action only in certain cases. 
+Out of the box, action creators can return just actions. That's where [Redux Thunk](https://github.com/gaearon/redux-thunk) comes in handy. Thunk allows us to have action creators that return a function instead of an action and dispatch an action only in certain cases. 
 
 
-If it wasn't been for Redux Thunk, we would probably ended up having just one action creator, something like this:
+If it wasn't been for Redux Thunk, we would've probably ended up having just one action creator, something like this:
 
 ```
 
@@ -252,10 +252,20 @@ Don't forget about including the Redux Thunk middleware in the `configureStore.j
     import rootReducer from '../reducers';
 
     export default function configureStore(initialState) {
+        const composeEnhancers = 
+            window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
+                window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+                    // options like actionSanitizer, stateSanitizer
+                }) : compose;
+
+        const enhancer = composeEnhancers(
+            applyMiddleware(thunk)
+        );
+
         return createStore(
             rootReducer,
             initialState,
-            applyMiddleware(thunk)
+            enhancer
         );
     }
 ```
@@ -284,7 +294,7 @@ Don't forget about including the Redux Thunk middleware in the `configureStore.j
 
 Let's start by talking about what we are importing here.
 
-In order to work with Redux, we have to import `connect` from redux:
+In order to work with Redux, we have to import `connect` from 'react-redux':
 
 
 ```
@@ -342,7 +352,7 @@ Finally, we will call this action creator in the `componentDidMount` lifecycle m
     this.props.fetchData('http://api.tvmaze.com/shows');
 ```
 
-Side note: if you are wondering why are we calling the action creator in componentDidMount instead of other 
+Side note: if you are wondering why are we calling the action creator in `componentDidMount` instead of other 
 lifecycle methods, I have found a couple of good reasons [here](https://tylermcginnis.com/react-interview-questions/):
 > You can't guarantee the AJAX request won't resolve before the component mounts. If it did, that would mean that you'd be trying to setState on an unmounted component, which not only won't work, but React will yell at you for. Doing AJAX in componentDidMount will guarantee that there's a component to update.
 
@@ -436,6 +446,18 @@ In the end, our component will look like this:
 ```
 
 And that was all !
+
+
+
+Our app will look like this:
+
+
+![](/images/intro-redux/app.PNG)
+
+
+
+I wasn't lying about my design skills, was I ? :)
+
 
 ### Last words and other resources
 
