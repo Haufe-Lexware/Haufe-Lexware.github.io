@@ -3,7 +3,7 @@ layout: post
 title: Redux intro. Redux with React
 subtitle: How to fetch data from an API
 category: dev
-tags: [frontend]
+tags: [development, frontend, howto]
 author: Camil Bradea
 author_email: camil.bradea@haufe-lexware.com 
 header-img: "images/intro-redux/header.png"
