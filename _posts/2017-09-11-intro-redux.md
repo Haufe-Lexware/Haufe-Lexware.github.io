@@ -32,7 +32,7 @@ Redux has three fundamental principles:
 
 - state is read-only
 
-    In order to modify state in Redux, actions have to be dispatched. Actions are a plain JavaScript object that describes what changed, sending data from the application to the store. 
+    In order to modify state in Redux, actions have to be dispatched. Actions are a plain JavaScript object that describe what changed, sending data from the application to the store. 
 
 
     An action will look like this:
@@ -67,7 +67,7 @@ Redux has three fundamental principles:
 
 ### How it works
 
-When one action is dispatched to the store, the combined reducer catches the action and sends it to each of the smaller reducers. Each smaller reducer examines what action was passed and dictates if and how to modify that part of state that it is responsible for producing a new state. You will find an example of a combined reducer a bit later in the article.
+When one action is dispatched to the store, the combined reducer catches the action and sends it to each of the smaller reducers. Each smaller reducer examines what action was passed and dictates if and how to modify that part of state. You will find an example of a combined reducer a bit later in the article.
 
 After each smaller reducer produces its corresponding next state, an updated state object will be saved in the store. 
 Because this is important, I'm mentioning again that the store is the single source of truth in our application. Therefore, when each action is run through the reducers, a new state is produced and saved in the store.
@@ -101,7 +101,7 @@ all the shows, toghether with their rating and premiere date.
 
 In order for this application to work properly, our state needs to have 3 properties: `isLoading`, `hasError` and `items`.
 So we will have one action creator for each property and an extra action creator where we will fetch the data and call the other 3 action 
-creators based on the status or our request to the API.
+creators based on the status of our request to the API.
 
 **Action creators**
 
@@ -149,7 +149,7 @@ To visualize a bit what was described earlier, this is how it looks in [Redux De
 Out of the box, action creators can return just actions. That's where [Redux Thunk](https://github.com/gaearon/redux-thunk) comes in handy. Thunk allows us to have action creators that return a function instead of an action and dispatch an action only in certain cases. 
 
 
-If it wasn't been for Redux Thunk, we would've probably ended up having just one action creator, something like this:
+If it wasn't for Redux Thunk, we would probably end up having just one action creator, something like this:
 
 ```
 
@@ -290,7 +290,7 @@ Don't forget about including the Redux Thunk middleware in the `configureStore.j
     );
 ```
 
-**Writing our React component which shows our fetched data**
+**Writing our React component which shows the fetched data**
 
 Let's start by talking about what we are importing here.
 
