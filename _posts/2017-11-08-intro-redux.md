@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Redux intro. Redux with React
+title: Introduction to React with Redux and Redux Thunk
 subtitle: How to fetch data from an API
 category: dev
 tags: [development, frontend, howto]
