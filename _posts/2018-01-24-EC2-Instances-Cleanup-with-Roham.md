@@ -9,9 +9,8 @@ author_email: esmaeil.sarabadani@haufe-lexware.com
 header-img: "images/new/Exportiert_42.jpg"
 ---
 
-<p align="center">
-  <img width="200" height="200" src="https://github.com/esarabadani/Roham/blob/master/Images/Roham_Logo.png">
-</p>
+{:.center}
+![Eiffel Tower - Paris](https://github.com/esarabadani/Roham/blob/master/Images/Roham_Logo.png){:style="margin:auto"}
 <p align="center"> [Roham GitHub Repo](https://github.com/esarabadani/Roham) </p> 
 
 # What is Roham?
