@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Blue-Green Deployment on Azure with Zero Downtime
+title: Save cost on AWS using Roham
 subtitle:
 category: dev
 tags: [howto, cloud, devops]
 author: Esmaeil Sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
-header-img: "images/new/Exportiert_38.jpg"
+header-img: "images/new/Exportiert_42.jpg"
 ---
 
 <p align="center">
@@ -24,6 +24,11 @@ Roham saves you cost on AWS by stopping/terminating/starting Instances on schedu
   - It is simple to implement by just following the implementation guide
 
 > The word 'Roham' refers to a well-known hero in Persian legends. It also literally means 'undefeatable'.
+
+# Why did we develop Roham?
+Like many other enterprises we also have the problem of having too many unneeded EC2 Instances which are simply forgotten to be stopped/terminated in different AWS Accounts and simply account for nearly 30% (if not more) of the total cost we pay in the cloud. So it is clear that we need a way to automatically find such Instances and terminate/stop them.
+
+If you simply search for such tools, you will probably come across many, but the problem is they are either too complicated to understand/implement, or they simply do not fit into our environment. So we decided to create our own tool to fix the problem.
 
 # Architecture and Components
 Roham consists of the following Lambda functions which are written in Python:
