@@ -21,7 +21,7 @@ Roham saves you cost on AWS by stopping/terminating/starting Instances on schedu
 
 > The word 'Roham' refers to a well-known hero in Persian legends. It also literally means 'undefeatable'. 
 
-> This is the link to the GitHub Repo as well: https://github.com/esarabadani/Roham
+> This is the link to the Roham GitHub Repo: https://github.com/esarabadani/Roham
 
 # Why did we develop Roham?
 Like many other enterprises we also have the problem of having too many unneeded EC2 Instances which are simply forgotten to be stopped/terminated in different AWS Accounts and simply account for nearly 30% (if not more) of the total cost we pay in the cloud. So it is clear that we need a way to automatically find such Instances and terminate/stop them.
