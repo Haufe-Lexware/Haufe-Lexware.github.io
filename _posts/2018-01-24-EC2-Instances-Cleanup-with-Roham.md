@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save cost on AWS using Roham
-subtitle:
+subtitle: Automate stop/start/termination of your EC2 Instances
 category: dev
 tags: [howto, cloud, devops]
 author: Esmaeil Sarabadani
