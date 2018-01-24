@@ -12,7 +12,7 @@ header-img: "images/new/Exportiert_42.jpg"
 <p align="center">
   <img width="200" height="200" src="https://github.com/esarabadani/Roham/blob/master/Images/Roham_Logo.png">
 </p>
-<p align="center"> Roham GitHub Repo: https://github.com/esarabadani/Roham </p> 
+<p align="center"> [Roham GitHub Repo](https://github.com/esarabadani/Roham) </p> 
 
 # What is Roham?
 Roham saves you cost on AWS by stopping/terminating/starting Instances on schedules defined by you. Roham gives you these benefits:
