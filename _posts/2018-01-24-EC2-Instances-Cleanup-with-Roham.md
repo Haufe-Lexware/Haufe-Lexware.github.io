@@ -1,17 +1,13 @@
 ---
 layout: post
 title: Save cost on AWS using Roham
-subtitle: Automate stop/start/termination of your EC2 Instances
+subtitle: Automate stop/start/termination of your EC2 Instances based on schedule tags
 category: dev
 tags: [howto, cloud, devops]
 author: Esmaeil Sarabadani
 author_email: esmaeil.sarabadani@haufe-lexware.com
 header-img: "images/new/Exportiert_42.jpg"
 ---
-
-<p align="center">
-  <img width="200" height="200" src="https://github.com/esarabadani/Roham/blob/master/Images/Roham_Logo.png">
-</p>
 
 # What is Roham?
 Roham saves you cost on AWS by stopping/terminating/starting Instances on schedules defined by you. Roham gives you these benefits:
@@ -24,6 +20,11 @@ Roham saves you cost on AWS by stopping/terminating/starting Instances on schedu
   - It is simple to implement by just following the implementation guide
 
 > The word 'Roham' refers to a well-known hero in Persian legends. It also literally means 'undefeatable'.
+
+<p align="center">
+  <img width="200" height="200" src="https://github.com/esarabadani/Roham/blob/master/Images/Roham_Logo.png">
+</p>
+<p align="center"> Roham GitHub Repo: https://github.com/esarabadani/Roham </p>  
 
 # Why did we develop Roham?
 Like many other enterprises we also have the problem of having too many unneeded EC2 Instances which are simply forgotten to be stopped/terminated in different AWS Accounts and simply account for nearly 30% (if not more) of the total cost we pay in the cloud. So it is clear that we need a way to automatically find such Instances and terminate/stop them.
@@ -65,7 +66,7 @@ The diagram and the steps below show how Roham (in this case Roham Stopper) work
 </p>
 
 # Implementation
-There is a complete step-by-step guide on how to implement Roham in your AWS environment here [on this page](https://github.com/esarabadani/Roham/blob/master/Configuration/How_to_Implement.md).
+There is a complete step-by-step guide on how to implement Roham in your AWS environment here [on this page](http://thebluenode.com/roham).
 
 # Tagging Scheme
 Once you follow the steps in the implementation guide and everything is done, now it is time to tag your EC2 Instances. Please follow the tagging scheme in the table below:
