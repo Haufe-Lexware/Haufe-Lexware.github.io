@@ -9,10 +9,6 @@ author_email: esmaeil.sarabadani@haufe-lexware.com
 header-img: "images/new/Exportiert_42.jpg"
 ---
 
-{:.center}
-![Eiffel Tower - Paris](https://github.com/esarabadani/Roham/blob/master/Images/Roham_Logo.png){:style="margin:auto"}
-<p align="center"> [Roham GitHub Repo](https://github.com/esarabadani/Roham) </p> 
-
 # What is Roham?
 Roham saves you cost on AWS by stopping/terminating/starting Instances on schedules defined by you. Roham gives you these benefits:
 
@@ -24,6 +20,7 @@ Roham saves you cost on AWS by stopping/terminating/starting Instances on schedu
   - It is simple to implement by just following the implementation guide
 
 > The word 'Roham' refers to a well-known hero in Persian legends. It also literally means 'undefeatable'. 
+> This is the link to the GitHub Repo as well: https://github.com/esarabadani/Roham
 
 # Why did we develop Roham?
 Like many other enterprises we also have the problem of having too many unneeded EC2 Instances which are simply forgotten to be stopped/terminated in different AWS Accounts and simply account for nearly 30% (if not more) of the total cost we pay in the cloud. So it is clear that we need a way to automatically find such Instances and terminate/stop them.
@@ -42,9 +39,7 @@ Roham consists of the following Lambda functions which are written in Python:
 
 Our recommendation is to create a central Shared Services AWS Account and create/import these Lambda functions there and then control tagging/termination/stop/start of your EC2 Instances in all your other AWS project Accounts. The diagram below shows the big picture:
 
-<p align="center">
-  <img width="450" height="652" src="https://github.com/esarabadani/Roham/blob/master/Images/big-picture.png">
-</p>
+![Configuration Flow with Config Server and Vault](https://github.com/esarabadani/Roham/blob/master/Images/big-picture.png)
 
 The diagram and the steps below show how Roham (in this case Roham Stopper) works across AWS Accounts and takes actions on EC2 Instances:
 
