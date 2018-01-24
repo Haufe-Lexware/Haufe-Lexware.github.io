@@ -28,7 +28,7 @@ Roham saves you cost on AWS by stopping/terminating/starting Instances on schedu
 # Why did we develop Roham?
 Like many other enterprises we also have the problem of having too many unneeded EC2 Instances which are simply forgotten to be stopped/terminated in different AWS Accounts and simply account for nearly 30% (if not more) of the total cost we pay in the cloud. So it is clear that we need a way to automatically find such Instances and terminate/stop them.
 
-If you simply search for such tools, you will probably come across many, but the problem is they are either too complicated to understand/implement, or they simply do not fit into our environment. So we decided to create our own tool to fix the problem.
+If you simply search for such tools, you will probably come across many, but the problem is they are either too complicated to understand/implement, or they simply do not fit into our environment. So we decided to create our own tool to fix the problem. It has been tried to provide a complete documentation on how it works and should be implemented. In case you still have questions about it, please do not hesitate to leave a comment and simply ask. 
 
 # Architecture and Components
 Roham consists of the following Lambda functions which are written in Python:
