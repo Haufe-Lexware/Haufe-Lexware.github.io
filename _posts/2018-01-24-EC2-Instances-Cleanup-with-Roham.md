@@ -9,6 +9,11 @@ author_email: esmaeil.sarabadani@haufe-lexware.com
 header-img: "images/new/Exportiert_42.jpg"
 ---
 
+<p align="center">
+  <img width="200" height="200" src="https://github.com/esarabadani/Roham/blob/master/Images/Roham_Logo.png">
+</p>
+<p align="center"> Roham GitHub Repo: https://github.com/esarabadani/Roham </p> 
+
 # What is Roham?
 Roham saves you cost on AWS by stopping/terminating/starting Instances on schedules defined by you. Roham gives you these benefits:
 
@@ -19,12 +24,7 @@ Roham saves you cost on AWS by stopping/terminating/starting Instances on schedu
   - It is a free open-source project and costs you almost nothing on AWS
   - It is simple to implement by just following the implementation guide
 
-> The word 'Roham' refers to a well-known hero in Persian legends. It also literally means 'undefeatable'.
-
-<p align="center">
-  <img width="200" height="200" src="https://github.com/esarabadani/Roham/blob/master/Images/Roham_Logo.png">
-</p>
-<p align="center"> Roham GitHub Repo: https://github.com/esarabadani/Roham </p>  
+> The word 'Roham' refers to a well-known hero in Persian legends. It also literally means 'undefeatable'. 
 
 # Why did we develop Roham?
 Like many other enterprises we also have the problem of having too many unneeded EC2 Instances which are simply forgotten to be stopped/terminated in different AWS Accounts and simply account for nearly 30% (if not more) of the total cost we pay in the cloud. So it is clear that we need a way to automatically find such Instances and terminate/stop them.
