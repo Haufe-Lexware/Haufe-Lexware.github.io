@@ -3,7 +3,7 @@ layout: post
 title: Natural language understanding and generation with Rasa
 subtitle: An overview about the Chatbot framework, it’s implementation and the resulting message flow
 category: dev
-tags: [nlg, nlu, ml]
+tags: [nlg, nlu, ml, gpt]
 author: Leon Kaltenbrunn
 author_email: kaltenbrunnl@haufe.com
 header-img: "images/natural-language-understanding-and-generation-with-Rasa/hero.png"

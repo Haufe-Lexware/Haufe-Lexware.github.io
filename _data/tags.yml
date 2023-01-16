@@ -99,3 +99,6 @@
 
 - slug: nlu
   name: Natural Language Understanding
+
+- slug: gpt
+  name: GPT
