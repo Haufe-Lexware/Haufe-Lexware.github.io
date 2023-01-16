@@ -9,9 +9,9 @@ author_email: kaltenbrunnl@haufe.com
 header-img: "images/natural-language-understanding-and-generation-with-Rasa/hero.png"
 ---
 
-Natural language processing (NLP) is a rapidly growing field of artificial intelligence that enables computers to understand and generate human language. Rasa is an open-source chatbot framework that uses NLP to enable developers to build sophisticated conversational systems that can understand and respond to user inputs in a natural and intuitive way.
+Natural language processing (NLP) is a rapidly growing field of artificial intelligence that enables computers to understand and generate human language. One such example of NLP technology is `GPT` from [OpenAI](https://beta.openai.com/docs/models), which is a powerful language model that can generate human-like text.  Rasa is an open-source chatbot framework that uses NLP to enable developers to build sophisticated conversational systems that can understand and respond to user inputs in a natural and intuitive way.
 
-In this blog post, we will provide an overview of Rasa and its implementation, as well as a detailed look at the resulting message flow. We will also discuss some key features and benefits of using Rasa for natural language understanding and generation. By the end of this post, you will have a better understanding of how Rasa works and how it can help you build powerful chatbots that can engage and assist your users like we do at Haufe with the [HRAssistant](https://www.haufe.de/hr/chatbot).
+In this blog post, we will provide an overview of Rasa and its implementation, as well as a detailed look at the resulting message flow. We will also discuss some key features and benefits of using Rasa for natural language understanding and generation including how we can use Rasa in conjunction with the new `GPT` models. By the end of this post, you will have a better understanding of how Rasa works and how it can help you build powerful chatbots that can engage and assist your users like we do at Haufe with the [HRAssistant](https://www.haufe.de/hr/chatbot).
 
 ### Everything starts with the training
 
@@ -56,7 +56,7 @@ Overall, the NLU pipeline is an essential part of the Rasa chatbot, and it plays
 
 Once the Rasa chatbot has identified the intent and entities in a user's message, it must generate a natural language response to send back to the user. This is where the natural language generation component of Rasa comes into play.
 
-The NLG component is responsible for generating the final response that is sent to the user. It does this by interfacing with a backend system, such as a database or external API, to retrieve the correct response for the given intent and entities. Depending on the specific implementation of the chatbot, the NLG component may use a variety of techniques to generate the response, such as template-based generation or machine learning-based generation like for example `ChatGPT`.
+The NLG component is responsible for generating the final response that is sent to the user. It does this by interfacing with a backend system, such as a database or external API, to retrieve the correct response for the given intent and entities. Depending on the specific implementation of the chatbot, the NLG component may use a variety of techniques to generate the response, such as template-based generation or machine learning-based generation like for example the `GPT-X` models.
 
 Once the appropriate response has been retrieved, it constructs a "message object" that contains the final response and any additional information that is required to deliver the message to the user. This will include the text of the response, as well as details about the formatting and layout of the message.
 
