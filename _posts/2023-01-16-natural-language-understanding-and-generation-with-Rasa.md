@@ -76,8 +76,7 @@ At Haufe with the HRAssistant we utilize the rasa framework to generate a highly
 
 Thanks for reading!
 
-### Further Reading & Sources
-Some key sources to refer to include:
+#### Further Reading & Sources
 - [Rasa](https://rasa.com/)
 - [Rasa's documentation on training data](https://rasa.com/docs/rasa/tuning-your-model/)
 - [Rasa's documentation on the NLU pipeline](https://rasa.com/docs/rasa/nlu/components/)
