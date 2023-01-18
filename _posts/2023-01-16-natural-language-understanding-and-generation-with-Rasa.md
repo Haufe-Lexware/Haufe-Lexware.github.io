@@ -50,7 +50,7 @@ The `DIETClassifier` is the final step in an NLU pipeline, and it is responsible
 {:.center}
 ![]( /images/natural-language-understanding-and-generation-with-Rasa/5.png){:style="width:100%"}
 
-Overall, the NLU pipeline is an essential part of the Rasa chatbot, and it plays a key role in enabling the chatbot to understand and respond to your messages in a natural and intuitive way. By processing your message through a series of steps, the NLU pipeline is able to extract important information and use it to generate a relevant and helpful response.
+Overall, the NLU pipeline is an essential part of the Rasa chatbot, and it plays a key role in enabling the chatbot to understand and respond to your messages in a natural and intuitive way. By processing your message through a series of steps, the NLU pipeline is able to extract important information and use it to generate a relevant and helpful response. For more information see the [Rasa Docs](https://rasa.com/docs/rasa/tuning-your-model/).
 
 ### Natural language generation with the NLG component
 
@@ -60,7 +60,7 @@ The NLG component is responsible for generating the final response that is sent 
 
 Once the appropriate response has been retrieved, it constructs a "message object" that contains the final response and any additional information that is required to deliver the message to the user. This will include the text of the response, as well as details about the formatting and layout of the message.
 
-After the NLG component has generated the message object, it is passed back to the Rasa policies, which are responsible for sending the message to the user. The policies may perform additional processing on the message object, such as adding buttons or other interactive elements, before sending it to the user.
+After the NLG component has generated the message object, it is passed to the Output Channel, which is responsible for sending the message to the user. The Output Channel may perform additional processing on the message object, such as adding buttons or other interactive elements, before sending it to the user.
 
 {:.center}
 ![]( /images/natural-language-understanding-and-generation-with-Rasa/6.png){:style="width:100%"}
@@ -74,3 +74,12 @@ In conclusion, Rasa is a powerful open-source chatbot framework that uses natura
 The Rasa NLU pipeline is an essential part of this process, as it is responsible for extracting important information from user messages and passing it to the `DIETClassifier`. The NLG component then generates a natural language response that is relevant to the user's message and sends it back to the user.
 
 Overall, Rasa provides a versatile and user-friendly platform for building chatbots that can engage and assist users in a wide range of conversational scenarios. By leveraging the latest advances in NLP and ML, Rasa enables developers to create chatbots that are highly effective at understanding and generating natural language.
+
+### Further Reading & Sources
+To build a powerful chatbot using natural language processing (NLP) technologies, it is important to familiarize yourself with the available tools and resources. Some key sources to refer to include:
+- [Rasa](https://rasa.com/)
+- [Rasa's documentation on training data](https://rasa.com/docs/rasa/tuning-your-model/)
+- [Rasa's documentation on the NLU pipeline](https://rasa.com/docs/rasa/nlu/components/)
+- [Rasa's documentation on handling business logic](https://rasa.com/docs/rasa/nlu/components/)
+- [OpenAI Models](https://beta.openai.com/docs/models)
+- [Haufe HR Assistant](https://www.haufe.de/hr/chatbot)
