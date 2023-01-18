@@ -58,7 +58,7 @@ The NLG component is responsible for generating the final response that is sent 
 
 Once the appropriate response has been retrieved, it constructs a "message object" that contains the final response and any additional information that is required to deliver the message to the user. This will include the text of the response, as well as details about the formatting and layout of the message.
 
-After the NLG component has generated the message object, it is passed to the Output Channel, which is responsible for sending the message to the user. The Output Channel may perform additional processing on the message object, such as adding buttons or other interactive elements, before sending it to the user. At the HR Assistant we provide two different output channel for our customers. The first one is MS Teams and the second is custom-made web-widget that can be embedded into any HTML based application or website. See the [rasa docs](https://rasa.com/docs/rasa/next/connectors/custom-connectors) for all custom connectors. 
+After the NLG component has generated the message object, it is passed to the Output Channel, which is responsible for sending the message to the user. The Output Channel may perform additional processing on the message object, such as adding buttons or other interactive elements, before sending it to the user. At the HR Assistant we provide two different output channel for our customers. The first one is MS Teams and the second is a custom-made web-widget that can be embedded into any HTML based application or website. See the [Rasa docs](https://rasa.com/docs/rasa/next/connectors/custom-connectors) for all custom connectors. 
 
 {:.center}
 ![]( /images/natural-language-understanding-and-generation-with-Rasa/6.png){:style="width:100%"}
