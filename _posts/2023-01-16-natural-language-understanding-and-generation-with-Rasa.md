@@ -40,7 +40,7 @@ Next, your message is passed through the `Count Vectors Featurizer`, which conve
 {:.center}
 ![]( /images/natural-language-understanding-and-generation-with-Rasa/2.png){:style="width:100%"}
 
-After the `Count Vectors Featurizer`, your message is passed through the `Language Model Featurizer`, which adds contextual information to the numerical values. This step takes into account the words that appear before and after each token, as well as their relationship to each other, to provide a more complete representation of your message. Some examples for a `Language Model Featurizer` can be the [LaBSE Model](https://huggingface.co/rasa/LaBSE) by rasa or the new [GPT models](https://beta.openai.com/docs/models).
+After the `Count Vectors Featurizer`, your message is passed through the `Language Model Featurizer`, which adds contextual information to the numerical values. This step takes into account the words that appear before and after each token, as well as their relationship to each other, to provide a more complete representation of your message. Some example models that can be used as a `Language Model Featurizer` can be the [LaBSE Model](https://huggingface.co/rasa/LaBSE) by rasa or the new [GPT models](https://beta.openai.com/docs/models).
 
 {:.center}
 ![]( /images/natural-language-understanding-and-generation-with-Rasa/3.png){:style="width:100%"}
