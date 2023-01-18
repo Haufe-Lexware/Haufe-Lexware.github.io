@@ -9,9 +9,9 @@ author_email: kaltenbrunnl@haufe.com
 header-img: "images/natural-language-understanding-and-generation-with-Rasa/hero.png"
 ---
 
-Natural language processing (NLP) is a rapidly growing field of artificial intelligence that enables computers to understand and generate human language. One such example of NLP technology is `GPT` from [OpenAI](https://beta.openai.com/docs/models), which is a powerful language model that can generate human-like text. Rasa is an open-source chatbot framework that uses NLP to enable developers to build sophisticated conversational systems that can understand and respond to user inputs in a natural and intuitive way.
+Natural language processing (NLP) is a rapidly growing field of artificial intelligence that enables computers to understand and generate human language. One such example of NLP technology is GPT from [OpenAI](https://beta.openai.com/docs/models), which is a powerful language model that can generate human-like text. Rasa is an open-source chatbot framework that uses NLP to enable developers to build sophisticated conversational systems that can understand and respond to user inputs in a natural and intuitive way.
 
-In this blog post, we will provide an overview of Rasa and its implementation, as well as a detailed look at the resulting message flow. We will also discuss some key features and benefits of using Rasa for natural language understanding and generation including how we can use Rasa in conjunction with the new `GPT` models. By the end of this post, you will have a better understanding of how Rasa works and how it can help you build powerful chatbots that can engage and assist your users like we do at Haufe with the [HRAssistant](https://www.haufe.de/hr/chatbot).
+In this blog post, we will provide an overview of Rasa and its implementation, as well as a detailed look at the resulting message flow. We will also discuss some key features and benefits of using Rasa for natural language understanding and generation including how we can use Rasa in conjunction with the new [GPT models](https://beta.openai.com/docs/models). By the end of this post, you will have a better understanding of how Rasa works and how it can help you build powerful chatbots that can engage and assist your users like we do at Haufe with the [HRAssistant](https://www.haufe.de/hr/chatbot).
 
 ### Everything starts with the training
 
@@ -40,7 +40,7 @@ Next, your message is passed through the `Count Vectors Featurizer`, which conve
 {:.center}
 ![]( /images/natural-language-understanding-and-generation-with-Rasa/2.png){:style="width:100%"}
 
-After the `Count Vectors Featurizer`, your message is passed through the `Language Model Featurizer`, which adds contextual information to the numerical values. This step takes into account the words that appear before and after each token, as well as their relationship to each other, to provide a more complete representation of your message. Some examples for a `Language Model Featurizer` can be the [LaBSE Model](https://huggingface.co/rasa/LaBSE) by rasa or the new `GPT` Models.
+After the `Count Vectors Featurizer`, your message is passed through the `Language Model Featurizer`, which adds contextual information to the numerical values. This step takes into account the words that appear before and after each token, as well as their relationship to each other, to provide a more complete representation of your message. Some examples for a `Language Model Featurizer` can be the [LaBSE Model](https://huggingface.co/rasa/LaBSE) by rasa or the new [GPT models](https://beta.openai.com/docs/models).
 
 {:.center}
 ![]( /images/natural-language-understanding-and-generation-with-Rasa/3.png){:style="width:100%"}
@@ -54,7 +54,7 @@ The `DIETClassifier` is the final step in an NLU pipeline, and it is responsible
 
 Once the Rasa chatbot has identified the intent and entities in a user's message, it must generate a natural language response to send back to the user. This is where the natural language generation component of Rasa comes into play.
 
-The NLG component is responsible for generating the final response that is sent to the user. It does this by interfacing with a backend system, such as a database or external API, to retrieve the correct response for the given intent and entities. Depending on the specific implementation of the chatbot, the NLG component may use a variety of techniques to generate the response, such as template-based generation or machine learning-based generation like for example the `GPT` models. At the HR Assistant we use GraphQL backend which is connected to an external API`s for translation called [DeepL](https://www.deepl.com/translator) and a [Postgres](https://www.postgresql.org/) database for content management and caching.
+The NLG component is responsible for generating the final response that is sent to the user. It does this by interfacing with a backend system, such as a database or external API, to retrieve the correct response for the given intent and entities. Depending on the specific implementation of the chatbot, the NLG component may use a variety of techniques to generate the response, such as template-based generation or machine learning-based generation like for example the [GPT models](https://beta.openai.com/docs/models). At the HR Assistant we use GraphQL backend which is connected to an external API`s for translation called [DeepL](https://www.deepl.com/translator) and a [Postgres](https://www.postgresql.org/) database for content management and caching.
 
 Once the appropriate response has been retrieved, it constructs a "message object" that contains the final response and any additional information that is required to deliver the message to the user. This will include the text of the response, as well as details about the formatting and layout of the message.
 
@@ -72,7 +72,7 @@ The essential part of this is the Rasa NLU pipeline, as it is responsible for ex
 
 Overall, Rasa provides a versatile platform for building chatbots that can engage and assist your customers in a wide range of conversational scenarios. By leveraging the latest advances in NLP and ML, Rasa enables you to create a chatbot that is highly effective at understanding and generating natural language.
 
-At Haufe with the HRAssistant we utilize the rasa framework to generate a highly scalable Assistant that can be implemented by our customers to serve their users. Advances like the `GPT` models will improve this even further as we're already planning on implementing the powerful language model in our product to further increase the value for our customers. 
+At Haufe with the HRAssistant we utilize the rasa framework to generate a highly scalable Assistant that can be implemented by our customers to serve their users. Advances like the [GPT models](https://beta.openai.com/docs/models) will improve this even further as we're already planning on implementing the powerful language model in our product to further increase the value for our customers. 
 
 Thanks for reading!
 
@@ -82,5 +82,4 @@ Some key sources to refer to include:
 - [Rasa's documentation on training data](https://rasa.com/docs/rasa/tuning-your-model/)
 - [Rasa's documentation on the NLU pipeline](https://rasa.com/docs/rasa/nlu/components/)
 - [Rasa's documentation on handling business logic](https://rasa.com/docs/rasa/nlu/components/)
-- [OpenAI Models](https://beta.openai.com/docs/models)
 - [Haufe HR Assistant](https://www.haufe.de/hr/chatbot)
