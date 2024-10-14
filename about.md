@@ -10,18 +10,22 @@ permalink: /about/
 
 ### More Information
 
-The Haufe Group stands for integrated cloud and desktop solutions in the areas of taxation, legal, bookkeeping, learning, and talent management. It is a leading media and software vendor for professional online portals, e-procurement, online communities, and human resource & organizational development solutions. 
+Welcome to the Haufe Group, a leading provider of software solutions and consulting services for businesses. With a rich history dating back to 1934, we have evolved into a trusted partner for organizations seeking digital transformation and innovation.
 
-The main target groups are large and midsize firms, small businesses and freelancers, tax advisers and lawyers, the public sector, real estate agents, and nonprofit organizations. A number of our brands – Haufe, Haufe Academy, and Lexware – are market leaders in these target groups. 
+At Haufe Group, we are passionate about empowering businesses through technology. Our diverse portfolio of brands, including Haufe, Lexware, Haufe Akademie, and Haufe Discovery, enables us to cater to a wide range of business needs.
 
-#### Corporate Background 
+- Haufe: The Haufe brand provides comprehensive software solutions and consulting services for human resources, finance, and legal departments. Their offerings include talent management, payroll, compliance, and document management solutions.
 
-The Haufe Group emerged from a successful publisher and the provider of Lexware, a leading source of commercial software for small firms; over time, it grew to offer a comprehensive portfolio of digital and web-based solutions. Its wide range of products and services have been merged in integrated workstation solutions that allow customers to work effectively. 
+- Lexware: Lexware focuses on providing software solutions specifically designed for small businesses and freelancers. Their products cover areas such as accounting, invoicing, payroll, and financial management.
 
-#### Current Market Position 
+- Haufe Akademie: Haufe Akademie is the training and development arm of the Haufe Group. They offer seminars, workshops, and online training courses in various areas such as leadership, HR management, finance, and legal topics.
 
-The Haufe Group is now considered one of the most innovative media and software vendors in Germany. Its solutions use state-of-the-art technology and are very user-friendly and practice-oriented. More than one million customers – including all DAX 30 firms – generate over 366 million euros in revenue. The Freiburg-based firm currently has some 1,950 employees within Germany and abroad. The Group's international growth strategy is based on its current product portfolio, and it expands on an ongoing basis thanks to the synergies which evolve from the core competencies and strengths of the individual firms and brands within the Group. 
+The Haufe Group is headquartered in Freiburg, Germany, and has additional offices in Germany, Spain and Romania. They serve customers across various industries, including finance, manufacturing, healthcare, and professional services.
+
+Overall, the Haufe Group is known for its expertise in providing software and consulting solutions that enable businesses to optimize their operations, enhance employee productivity, and drive sustainable growth.
+
+Join us on this software development blog as we share insights, trends, and best practices in the ever-evolving world of technology. Together, let's explore the limitless possibilities of software development and drive business success in the digital age with the Haufe Group.
 
 ### Contact us
 
-[info(at)haufe-lexware.com](mailto:info@haufe-lexware.com)
+[info(at)haufe.com](mailto:info@haufe.com)

@@ -389,7 +389,6 @@ footer .copyright {
   margin: 0;
   font-size: 0.85em;
   line-height: 1.764705882em;
-  vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
   -webkit-transition: top 0.3s ease,opacity 0.3s ease;
@@ -516,7 +515,7 @@ code {
 }
 .nav-logo {
   width: 220px;
-  height: 20px;
+  height: 60px;
   margin-top: 22px;
   margin-left: 10px;
   float: left;
@@ -532,12 +531,12 @@ code {
    }
 }
 .logo-negative { 
-  background-image: url("../images/HaufeGroup_Logo_RGB_neg.png");
+  background-image: url("../images/HG_Logo_Standard_quer_einzeilig_neg_RGB.svg");
   background-size: 220px;
   background-repeat: no-repeat;
 }
 .logo-positive {
-  background-image: url("../images/HaufeGroup_Logo_RGB_pos.png");
+  background-image: url("../images/HG_Logo_Standard_quer_einzeilig_pos_RGB.svg");
   background-size: 220px;
   background-repeat: no-repeat;
 } 

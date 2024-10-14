@@ -32,4 +32,4 @@ Let's Treat Docs Like Code.
 When you want to write more content, create accurate technical docs, iterate with collaborators, test drafts, merge, build, and deploy docs.
 ```
 
-Like today we have DevOps and CI/CD for our code, I strongly feel that  ContentOps and CI/CD are just around the corner for our content. And given that we as [Haufe.Group](https://www.haufe-lexware.com/en/about-us/) have our roots in publishing, this is an exciting propostion to think about.
+Like today we have DevOps and CI/CD for our code, I strongly feel that  ContentOps and CI/CD are just around the corner for our content. And given that we as [Haufe.Group](https://www.haufegroup.com/en/company) have our roots in publishing, this is an exciting propostion to think about.

@@ -1,6 +1,6 @@
 ## Contributing
 
-Pull Requests from our design, development and operations teams of [Haufe.Group](http://www.haufe-lexware.com) and its subsidiaries are greatly appreciated. If you've never contributed to an open source project before we are more than happy to walk you through how to create a pull request.
+Pull Requests from our design, development and operations teams of [Haufe.Group](https://www.haufegroup.com/) and its subsidiaries are greatly appreciated. If you've never contributed to an open source project before we are more than happy to walk you through how to create a pull request.
 
 The short version of it is to fork this repo your own account and then clone it locally and add your changes where the filename of new posts in the folder `_posts` should be prefixed with the publication date. You can easily run Jekyll locally using docker. Simply `cd` into your `Haufe-Lexware.github.io` fork containing your changes, and then issue the following command:
 

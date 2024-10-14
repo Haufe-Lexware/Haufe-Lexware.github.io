@@ -38,6 +38,7 @@ It’s very easy, you have to download and install it from [here](https://www.pa
 For this we need to create a template. The format of a template is simple JSON file, like below:
 
 packer_template.json
+{% raw %}
 ```json
 {
   "variables": {
@@ -69,6 +70,7 @@ packer_template.json
     }]
 }
 ```
+{% endraw %}
 
 With this template, we will create a CentOS 7 image without GUI, named Minimal-CentOS7 with 80GB disk space and built in “builds” folder from our project as OVA file.
 

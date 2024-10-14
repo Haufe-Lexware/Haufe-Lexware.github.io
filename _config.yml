@@ -3,12 +3,14 @@
 #
 
 # Your site
-title:
-header-img: images/background2.jpg
+title: Haufe Group Dev Blog
+repository: Haufe-Lexware/Haufe-Lexware.github.io
+header-img: images/banner.jpg
+
 email: your-email@yourdomain.com
-copyright_name: Haufe-Lexware Services GmbH &amp; Co.KG
+copyright_name: Haufe Group SE
 description: Dev + Design Blog from Haufe Group
-headline: Silicon Black Forest
+headline: Haufe Group Dev Blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/Haufe-Lexware/Haufe-Lexware.github.io/master/images/haufe-logo.jpg
