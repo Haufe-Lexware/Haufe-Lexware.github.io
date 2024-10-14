@@ -77,13 +77,11 @@ Configure which Entra ID attributes should be used to log in to your application
 2. **Set Unique User Identifier**
     * Select the **Unique User Identifier (Name ID)** claim to edit it.
     * In the **Source attribute**, set the value to user.objectid.
+    * Save the changes.
 
 <a href="/images/entra_cognito/sso_object_id_claim.png" target="_blank">
     <img src="/images/entra_cognito/sso_object_id_claim.png" alt="Set Object ID Claim" style="width: 85%; display: block; margin: 0 auto;">
 </a>
-
-3. Save the changes
-
 
 ## Update the AWS Cognito userpool
 Once you have defined all the claim mappings on the Entra ID side, it is time to connect the dots on AWS's side.
