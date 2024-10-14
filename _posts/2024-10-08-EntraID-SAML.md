@@ -27,7 +27,7 @@ The "user.objectid" attribute is unique to each user in Entra ID and does not ch
     * Select the option to **Integrate any other application you don’t find in the gallery (Non-gallery)**.
     * Type the name of your new application and create it.
 
-![]( /images/entra_cognito/create_ent_app.png)
+<img src="/images/entra_cognito/create_ent_app.png" alt="Create Enterprise Application" style="width: 80%; display: block; margin: 0 auto;">
 
 ### Configure Single Sign-On (SSO) login
 Create the connection between Entra ID and your application by setting the login URL and the identity of your application.
