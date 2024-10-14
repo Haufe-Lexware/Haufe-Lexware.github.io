@@ -19,12 +19,12 @@ The "user.objectid" attribute is unique to each user in Entra ID and does not ch
 ## Steps to Create a New Enterprise Application in Entra ID
 
 ### Create a New Application
-1. <strong>Navigate to the Azure Portal</strong>
+1. **Navigate to the Azure Portal**
     * Open the Azure Portal and go to the Entra ID service.
-2. <strong>Create a New Application</strong>
-    * Go to <strong>Enterprise applications</strong> and select <strong>New application</strong>.
-    * Choose <strong>Create your own application</strong>.
-    * Select the option to <strong>Integrate any other application you don’t find in the gallery (Non-gallery)</strong>.
+2. **Create a New Application**
+    * Go to **Enterprise applications** and select **New application**.
+    * Choose **Create your own application**.
+    * Select the option to **Integrate any other application you don’t find in the gallery (Non-gallery)**.
     * Type the name of your new application and create it.
 
 <a href="/images/entra_cognito/create_ent_app.png" target="_blank">
@@ -121,13 +121,17 @@ This is a better solution than uploading the XML file because Cognito refreshes 
 ### Configure Attribute Mapping
 Configure the attributes that are stored in Entra ID and are mapped via the SAML schema in AWS Cognito. Here is a copy-and-paste friendly table for easier usage:
 
+<div style="width: 85%; margin: 0 auto;">
+    
 | SAML Attribute | User Pool Attribute | 
-|----------|----------|
-| http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn | Profile
-| http://schemas.xmlsoap.org/claims/CommonName | Preferred User Name
-| http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname | Given Name
-| http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname | Family Name
-| http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress | Email
+|----------------|---------------------|
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` | Profile |
+| `http://schemas.xmlsoap.org/claims/CommonName` | Preferred User Name |
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname` | Given Name |
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname` | Family Name |
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` | Email |
+
+</div>
 
 <a href="/images/entra_cognito/sso_cognito_attributes.png" target="_blank">
     <img src="/images/entra_cognito/sso_cognito_attributes.png" alt="Cognito Attribute Mapping" style="width: 85%; display: block; margin: 0 auto;">
