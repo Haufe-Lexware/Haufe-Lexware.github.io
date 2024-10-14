@@ -43,14 +43,11 @@ Create the connection between Entra ID and your application by setting the login
     * Add the **Identifier (Entity ID)** and **Reply URL (Assertion Consumer Service URL)**.
         * The **Identifier (Entity ID)** should follow the format: urn:amazon:cognito:sp:<Cognito_userpool_ID>.
         * The **Reply URL (Assertion Consumer Service URL)** should follow the format: https://<Cognito_domain_URL>/saml2/idpresponse.
-
-3. **Save the changes** to the Basic SAML Configuration.
+        * **Save the changes** to the Basic SAML Configuration.
 
 <a href="/images/entra_cognito/saml_sso_config.png" target="_blank">
     <img src="/images/entra_cognito/saml_sso_config.png" alt="SAML SSO Configuration" style="width: 85%; display: block; margin: 0 auto;">
 </a>
-
-
 
 ### Configure the User Access for SSO login
 Assign the users and groups that should have permissions to log in to your application.
@@ -112,7 +109,6 @@ After all configurations are done on Entra ID side, you need to update the confi
     <img src="/images/entra_cognito/sso_cognito_saml_config.png" alt="Cognito SAML Configuration" style="width: 85%; display: block; margin: 0 auto;">
 </a>
 
-
 This is a better solution than uploading the XML file because Cognito refreshes the metadata every 6 hours or before the metadata expires. This way, you don’t have to manually refresh the metadata XML every time the Entra ID SSL certificates expire or any other change occurs on the Entra ID side that would impact the federation authentication.
 
 
@@ -131,14 +127,12 @@ Configure the attributes that are stored in Entra ID and are mapped via the SAML
     <img src="/images/entra_cognito/sso_cognito_attributes.png" alt="Cognito Attribute Mapping" style="width: 85%; display: block; margin: 0 auto;">
 </a>
 
-
 ### Enable the External IdP for App Clients
 Now that you have an IdP using the Entra ID configuration, you need to assign it to your application created in the Cognito userpool.
 1. **Enable the IdP for App Clients**
     * In AWS Cognito, navigate to the **App integration** tab, **App client list** section.
     * Select the App client you want to configure and edit the **Hosted UI** section.
     * From the **Identity providers** dropdown, select your newly created IdP (e.g., EntraID) and save the changes.
-
 
 ### Test the Configuration
 
@@ -152,7 +146,6 @@ The user attribute **identities** will store the metadata relating to the extern
 <a href="/images/entra_cognito/sso_cognito_identities.png" target="_blank">
     <img src="/images/entra_cognito/sso_cognito_identities.png" alt="Cognito Identities" style="width: 85%; display: block; margin: 0 auto;">
 </a>
-
 
 These fields will be updated on each successful authentication, so you can rely on the fact that the fields you receive via JWT attributes will be up-to-date.
 
