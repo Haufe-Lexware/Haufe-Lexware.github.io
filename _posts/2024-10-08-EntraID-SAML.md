@@ -41,8 +41,8 @@ Create the connection between Entra ID and your application by setting the login
 2. **Edit Basic SAML Configuration**
     * Edit the **Basic SAML Configuration**.
     * Add the **Identifier (Entity ID)** and **Reply URL (Assertion Consumer Service URL)**.
-        * The **Identifier (Entity ID)** should follow the format: urn:amazon:cognito:sp:<Cognito_userpool_ID>.
-        * The **Reply URL (Assertion Consumer Service URL)** should follow the format: https://<Cognito_domain_URL>/saml2/idpresponse.
+        * The **Identifier (Entity ID)** should follow the format: urn:amazon:cognito:sp:"Cognito_userpool_ID".
+        * The **Reply URL (Assertion Consumer Service URL)** should follow the format: https://Cognito_domain_URL/saml2/idpresponse.
         * **Save the changes** to the Basic SAML Configuration.
 
 <a href="/images/entra_cognito/saml_sso_config.png" target="_blank">
