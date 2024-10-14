@@ -44,7 +44,8 @@ Create the connection between Entra ID and your application by setting the login
 
 3. **Save the changes** to the Basic SAML Configuration.
 
-![]( /images/entra_cognito/saml_sso_config.png)
+<img src="/images/entra_cognito/saml_sso_config.png" alt="SAML SSO Configuration" style="width: 80%; display: block; margin: 0 auto;">
+
 
 
 ### Configure the User Access for SSO login
@@ -56,20 +57,20 @@ Assign the users and groups that should have permissions to log in to your appli
     * Select the users and/or groups who should have access to your application.
     * Confirm your selections and save.
 
-![]( /images/entra_cognito/sso_add_users.png)
+<img src="/images/entra_cognito/sso_add_users.png" alt="Add Users for SSO" style="width: 80%; display: block; margin: 0 auto;">
 
 ### Configure User Attributes & Claims for SSO login
 Configure which Entra ID attributes should be used to log in to your application.
 1. **Edit User Attributes & Claims**
     * From the **Single Sign-On** option for your Enterprise application, edit the **User Attributes & Claims**.
 
-![]( /images/entra_cognito/sso_attributes_claims.png)
+<img src="/images/entra_cognito/sso_attributes_claims.png" alt="User Attributes and Claims" style="width: 80%; display: block; margin: 0 auto;">
 
 2. **Set Unique User Identifier**
     * Select the **Unique User Identifier (Name ID)** claim to edit it.
     * In the **Source attribute**, set the value to user.objectid.
 
-![]( /images/entra_cognito/sso_object_id_claim.png)
+<img src="/images/entra_cognito/sso_object_id_claim.png" alt="Set Object ID Claim" style="width: 80%; display: block; margin: 0 auto;">
 
 3. Save the changes
 
@@ -84,7 +85,7 @@ This is the intermediate step between configuring Entra ID and Cognito.
     * Locate the App Federation Metadata Url.
     * Copy this URL, as it will be needed in AWS Cognito.
 
-![]( /images/entra_cognito/sso_metadata_url.png)
+<img src="/images/entra_cognito/sso_metadata_url.png" alt="Federation Metadata URL" style="width: 80%; display: block; margin: 0 auto;">
 
 ### Enable the IdP
 After all configurations are done on Entra ID side, you need to update the configuration in Cognito.
@@ -97,7 +98,7 @@ After all configurations are done on Entra ID side, you need to update the confi
     * Use the recommended setting **Require SP-initiated SAML assertions** for the **IdP-initiated SAML sign-in** setting.
     * Enter the metadata document endpoint URL saved previously.
 
-![]( /images/entra_cognito/sso_cognito_saml_config.png)
+<img src="/images/entra_cognito/sso_cognito_saml_config.png" alt="Cognito SAML Configuration" style="width: 80%; display: block; margin: 0 auto;">
 
 
 This is a better solution than uploading the XML file because Cognito refreshes the metadata every 6 hours or before the metadata expires. This way, you don’t have to manually refresh the metadata XML every time the Entra ID SSL certificates expire or any other change occurs on the Entra ID side that would impact the federation authentication.
@@ -114,7 +115,7 @@ Configure the attributes that are stored in Entra ID and are mapped via the SAML
 | http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname | Family Name
 | http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress | Email
 
-![]( /images/entra_cognito/sso_cognito_attributes.png)
+<img src="/images/entra_cognito/sso_cognito_attributes.png" alt="Cognito Attribute Mapping" style="width: 80%; display: block; margin: 0 auto;">
 
 
 ### Enable the External IdP for App Clients
@@ -134,7 +135,8 @@ After a user has successfully authenticated via the external IdP, it will automa
 
 The user attribute **identities** will store the metadata relating to the external IdP that “owns” this identity. This includes the user’s ID in the external IdP’s attribute, in our case, the "Identifier (Entity ID)".
 
-![]( /images/entra_cognito/sso_cognito_identities.png)
+<img src="/images/entra_cognito/sso_cognito_identities.png" alt="Cognito Identities" style="width: 80%; display: block; margin: 0 auto;">
+
 
 These fields will be updated on each successful authentication, so you can rely on the fact that the fields you receive via JWT attributes will be up-to-date.
 
