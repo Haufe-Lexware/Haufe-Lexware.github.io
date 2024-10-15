@@ -79,15 +79,11 @@ Configure which Entra ID attributes should be used to log in to your application
         <ul>
             <li>Select the <strong>Unique User Identifier (Name ID)</strong> claim to edit it.</li>
             <li>In the <strong>Source attribute</strong>, set the value to <code>user.objectid</code>.</li>
+            <li><strong>Save the Changes</strong></li>
         </ul>
         <a href="/images/entra_cognito/sso_object_id_claim.png" target="_blank">
             <img src="/images/entra_cognito/sso_object_id_claim.png" alt="Set Object ID Claim" style="width: 85%; display: block; margin: 0 auto;">
         </a>
-    </li>
-    <li><strong>Save the Changes</strong>
-        <ul>
-            <li>Save the changes.</li>
-        </ul>
     </li>
 </ol>
 
