@@ -62,23 +62,34 @@ Assign the users and groups that should have permissions to log in to your appli
     <img src="/images/entra_cognito/sso_add_users.png" alt="Add Users for SSO" style="width: 85%; display: block; margin: 0 auto;">
 </a>
 
-### Configure User Attributes & Claims for SSO login
+### 4. Configure User Attributes & Claims for SSO Login
+
 Configure which Entra ID attributes should be used to log in to your application.
-1. **Edit User Attributes & Claims**
-    * From the **Single Sign-On** option for your Enterprise application, edit the **User Attributes & Claims**.
 
-<a href="/images/entra_cognito/sso_attributes_claims.png" target="_blank">
-    <img src="/images/entra_cognito/sso_attributes_claims.png" alt="User Attributes and Claims" style="width: 85%; display: block; margin: 0 auto;">
-</a>
-
-2. **Set Unique User Identifier**
-    * Select the **Unique User Identifier (Name ID)** claim to edit it.
-    * In the **Source attribute**, set the value to user.objectid.
-    * Save the changes.
-
-<a href="/images/entra_cognito/sso_object_id_claim.png" target="_blank">
-    <img src="/images/entra_cognito/sso_object_id_claim.png" alt="Set Object ID Claim" style="width: 85%; display: block; margin: 0 auto;">
-</a>
+<ol>
+    <li><strong>Edit User Attributes & Claims</strong>
+        <ul>
+            <li>From the <strong>Single Sign-On</strong> option for your Enterprise application, edit the <strong>User Attributes & Claims</strong>.</li>
+        </ul>
+        <a href="/images/entra_cognito/sso_attributes_claims.png" target="_blank">
+            <img src="/images/entra_cognito/sso_attributes_claims.png" alt="User Attributes and Claims" style="width: 85%; display: block; margin: 0 auto;">
+        </a>
+    </li>
+    <li><strong>Set Unique User Identifier</strong>
+        <ul>
+            <li>Select the <strong>Unique User Identifier (Name ID)</strong> claim to edit it.</li>
+            <li>In the <strong>Source attribute</strong>, set the value to <code>user.objectid</code>.</li>
+        </ul>
+        <a href="/images/entra_cognito/sso_object_id_claim.png" target="_blank">
+            <img src="/images/entra_cognito/sso_object_id_claim.png" alt="Set Object ID Claim" style="width: 85%; display: block; margin: 0 auto;">
+        </a>
+    </li>
+    <li><strong>Save the Changes</strong>
+        <ul>
+            <li>Save the changes.</li>
+        </ul>
+    </li>
+</ol>
 
 ## Update the AWS Cognito userpool
 Once you have defined all the claim mappings on the Entra ID side, it is time to connect the dots on AWS's side.
