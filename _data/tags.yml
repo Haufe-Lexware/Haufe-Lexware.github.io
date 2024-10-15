@@ -93,4 +93,12 @@
 
 - slug: ux
   name: UX
-  
+
+- slug: nlg
+  name: Natural Language Generation
+
+- slug: nlu
+  name: Natural Language Understanding
+
+- slug: gpt
+  name: GPT
