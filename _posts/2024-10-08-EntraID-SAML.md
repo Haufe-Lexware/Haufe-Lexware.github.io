@@ -45,6 +45,8 @@ Create the connection between Entra ID and your application by setting the login
         * The **Reply URL (Assertion Consumer Service URL)** should follow the format: https://Cognito_domain_URL/saml2/idpresponse.
         * **Save the changes** to the Basic SAML Configuration.
 
+3. **Save the changes** to the Basic SAML Configuration.
+
 <a href="/images/entra_cognito/saml_sso_config.png" target="_blank">
     <img src="/images/entra_cognito/saml_sso_config.png" alt="SAML SSO Configuration" style="width: 85%; display: block; margin: 0 auto;">
 </a>
