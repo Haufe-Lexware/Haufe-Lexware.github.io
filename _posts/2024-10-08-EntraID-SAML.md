@@ -64,7 +64,7 @@ Assign the users and groups that should have permissions to log in to your appli
     <img src="/images/entra_cognito/sso_add_users.png" alt="Add Users for SSO" style="width: 85%; display: block; margin: 0 auto;">
 </a>
 
-### 4. Configure User Attributes & Claims for SSO Login
+### Configure User Attributes & Claims for SSO Login
 
 Configure which Entra ID attributes should be used to log in to your application.
 
