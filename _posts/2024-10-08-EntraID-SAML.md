@@ -11,10 +11,10 @@ header-img: "images/aws-cognito-security/awsblogpost_bg8.png"
 
 # How to Create a New Entra ID Enterprise Application and Configure Custom Attributes for SAML Login for AWS Cognito
 
-When integrating Entra ID (formerly Azure AD) with AWS Cognito for SAML login, it's important to use a unique attribute to identify users. In this guide, we'll walk you through the steps to create a new Enterprise Application in Entra ID and configure a custom attribute named "user.objectid". This attribute ensures that user identities remain consistent even if other attributes, such as last names, change.
+When integrating Entra ID (formerly Azure AD) with AWS Cognito for SAML login, it's important to use a unique attribute to identify users. In this guide, we'll walk you through the steps to create a new Enterprise Application in Entra ID and configure a custom attribute named <code>user.objectid</code>. This attribute ensures that user identities remain consistent even if other attributes, such as last names, change.
 
-## Why use "user.objectid"?
-The "user.objectid" attribute is unique to each user in Entra ID and does not change, even if other user attributes are updated. This is particularly important for scenarios where an employee changes their last name, as other attributes will be updated with the new value. Using "user.objectid" prevents the creation of a new local user in your application and ensures that existing user data is preserved.
+## Why use <code>user.objectid</code>?
+The <code>user.objectid</code> attribute is unique to each user in Entra ID and does not change, even if other user attributes are updated. This is particularly important for scenarios where an employee changes their last name, as other attributes will be updated with the new value. Using <code>user.objectid</code> prevents the creation of a new local user in your application and ensures that existing user data is preserved.
 
 ## Steps to Create a New Enterprise Application in Entra ID
 
@@ -41,8 +41,8 @@ Create the connection between Entra ID and your application by setting the login
 2. **Edit Basic SAML Configuration**
     * Edit the **Basic SAML Configuration**.
     * Add the **Identifier (Entity ID)** and **Reply URL (Assertion Consumer Service URL)**.
-        * The **Identifier (Entity ID)** should follow the format: urn:amazon:cognito:sp:"Cognito_userpool_ID".
-        * The **Reply URL (Assertion Consumer Service URL)** should follow the format: https://Cognito_domain_URL/saml2/idpresponse.
+        * The **Identifier (Entity ID)** should follow the format: urn:amazon:cognito:sp:<code>cognito_userpool_id</code>.
+        * The **Reply URL (Assertion Consumer Service URL)** should follow the format: https://<code>cognito_domain_url</code>/saml2/idpresponse.
         * **Save the changes** to the Basic SAML Configuration.
 
 3. **Save the changes** to the Basic SAML Configuration.
